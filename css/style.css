@@ -532,7 +532,7 @@ footer{
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  gap: .625rem;
+  gap: 1.625rem;
   margin-bottom: 3.125rem;
 }
 
