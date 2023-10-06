@@ -1,0 +1,107 @@
+body{
+  .main_contacto{
+    .titulo_contacto{
+      text-align: center;
+      margin-top: 1.875rem;
+      margin-bottom: .625rem;
+      font-family: 'Poppins', sans-serif;
+      color: white;
+    }
+    .redes_contacto{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 1.25rem;
+      margin: 1.875rem 0rem 2.5rem 0rem;
+      a{
+        img{
+          width: 3.125rem;
+        }
+      }
+    }
+    .container_formulario{
+      margin:3.125rem 0rem;
+      .formulario_contacto{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0rem 1.25rem 0rem 1.25rem;
+        gap: 1.25rem;
+        transition: all 0.3s;
+        align-items: center;
+        .nombre_apellido_email{
+          display: flex;
+          flex-direction: column;
+          gap: 1.3125rem;
+          transition: all 0.3s;
+          input{
+            font-family: 'Roboto', sans-serif;
+            border-radius: .3125rem;
+            border: .0625rem solid black;
+            padding: .625rem 6.75rem .5rem .3125rem;
+            transition: all 0.3s;
+          }
+        }
+        .textarea{
+          padding: .3125rem 0rem 0rem .3125rem;
+          resize: none;
+          font-family: 'Roboto', sans-serif;
+          border-radius: .3125rem;
+          border: .0625rem solid black;
+          max-width: 17.5rem;
+          transition: all 0.3s;
+          margin-right: .875rem;
+        }
+      }
+    }
+    .mail_ubicacion{
+      margin-bottom: 2.5rem;
+      .email{
+        color:white;
+        display: flex;
+        flex-direction: column;
+        gap: .3125rem;
+        justify-content: center;
+        text-align: center;
+        p{
+          font-size: 1.25rem;
+        }
+        a{
+          img{
+            width: 2.5rem;
+          }
+        }
+      }
+      .ubicacion{
+        color:white;
+        display: flex;
+        flex-direction: column;
+        gap: .3125rem;
+        justify-content: center;
+        text-align: center;
+        p{
+          font-size: 1.25rem;
+        }
+        a{
+          img{
+            width: 2.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+  /*.boton_formulario{
+          text-align: center;
+          input{
+            padding: .625rem 1.5625rem;
+            border-radius: .3125rem;
+            font-family: 'Roboto', sans-serif;
+            font-weight: bold;
+            border: .0625rem solid black;
+            background-color: transparent;
+            transition: all 0.3s;
+          }
+        }*/

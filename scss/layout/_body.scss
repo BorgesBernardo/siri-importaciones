@@ -1,0 +1,33 @@
+body{
+  background-color: #000;
+}
+
+.index{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 6.25rem 1fr 11.5rem;
+}
+
+.productos{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 6.25rem 1fr 11.5rem;
+}
+
+.nosotros{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 6.25rem 1fr 11.5rem;
+}
+
+.galeria{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 6.25rem 1fr 11.5rem;
+}
+
+.contacto{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 6.25rem 1fr 11.5rem;
+}

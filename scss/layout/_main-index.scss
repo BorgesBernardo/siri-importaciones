@@ -1,0 +1,224 @@
+body{
+  .index{
+    main{
+      .container_categorias{
+        font-family: 'Roboto', sans-serif;
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+        justify-content: space-around;
+        align-items: center;
+        margin: 3.125rem .625rem;
+        .categoria_productos{
+          display: flex;
+          flex-direction: row;
+          font-size: 1.125rem;
+          border-radius: .625rem;
+          padding: .625rem 0rem .625rem .625rem;
+          transition: all 0.3s;
+          width: 83%;
+          box-shadow: 0rem 0rem .625rem white;
+          a{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: .625rem;
+            font-family: 'Roboto', sans-serif;
+            text-decoration: none;
+            h3{
+              color: white;
+              margin-bottom: 0rem;
+            }
+          }
+        }
+        .categoria_mayorista{
+          display: flex;
+          flex-direction: row;
+          font-size: 1.125rem;
+          border-radius: .625rem;
+          padding: .625rem 0rem .625rem .625rem;
+          transition: all 0.3s;
+          width: 83%;
+          box-shadow: 0rem 0rem .625rem white;
+          a{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: .625rem;
+            font-family: 'Roboto', sans-serif;
+            text-decoration: none;
+            h3{
+              color: white;
+              margin-bottom: 0rem;
+            }
+          }
+        }
+        .categoria_ofertas{
+          display: flex;
+          flex-direction: row;
+          font-size: 1.125rem;
+          border-radius: .625rem;
+          padding: .625rem 0rem .625rem .625rem;
+          transition: all 0.3s;
+          width: 83%;
+          box-shadow: 0rem 0rem .625rem white;
+          a{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: .625rem;
+            font-family: 'Roboto', sans-serif;
+            text-decoration: none;
+            h3{
+              color: white;
+              margin-bottom: 0rem;
+            }
+          }
+        }
+      }
+      .container_productos{
+        display: grid;
+        grid-template-columns: repeat(
+          auto-fit, minmax(15rem , 1fr) );
+        ;
+        gap: 1.25rem;
+        margin:0rem 0rem 2.5rem 1.875rem;
+        transition: all 0.3s;
+        .producto_apple{
+          font-family: 'Roboto', sans-serif;
+          display: flex;
+          flex-direction: column;
+          transition: all 0.3s;
+          margin-left: 1.25rem;
+          h3{
+            margin-bottom: 0rem;
+            transition: all 0.3s;
+            color: white;
+          }
+          p{
+            color:grey;
+            margin-bottom: 0rem;
+            transition: all 0.3s;
+          }
+          img{
+            width: 13.125rem;
+            margin: .4375rem 0rem;
+            transition: all 0.3s;
+          }
+          .boton_producto{
+            padding: .625rem 0rem;
+            border-radius: .625rem;
+            padding: .625rem .625rem;
+            border: .0625rem solid white;
+            width: 5.625rem;
+            text-align: center;
+            transition: all 0.3s;
+            a{
+              color: white;
+              font-family: 'Roboto', sans-serif;
+              text-decoration: none;
+              transition: all 0.3s;
+            }
+          }
+        }
+      }
+      .container_fotografia{
+        width: 100%;
+        margin: 1.875rem 0rem;
+        transition: all 0.3s;
+        h2{
+          color: white;
+          font-family: 'Poppins', sans-serif;
+          text-align: center;
+          box-shadow: 0rem 0rem .625rem white;
+          padding: .625rem;
+          margin-bottom: 2rem;
+          transition: all 0.3s;
+        }
+        .nikon{
+          width: 100%;
+          height: 6.25rem;
+          background-image: url(../assets/Inicio/nikon.jpg);
+          background-position:center;
+          background-size: cover;
+          background-position-y:26%;
+          text-align: center;
+          border: .125rem solid white;
+          margin-bottom: .1875rem;
+          .fondo_nikon{
+            background-color: rgba(0, 0, 0, 0.462);
+            width: 100%;
+            height: 6.25rem;
+            a{
+              background-color: rgba(0, 0, 0, 0.861);
+              color: white;
+              padding: .5rem 1.875rem;
+              border-radius: 1.25rem;
+              border: .0625rem solid white;
+              font-size: 1.25rem;
+              position: relative;
+              top: 2.5rem;
+              font-family: 'Roboto', sans-serif;
+              text-decoration: none;
+            }
+          }
+        }
+        .canon{
+          width: 100%;
+          height: 6.25rem;
+          background-image: url(../assets/Inicio/canon.jpg);
+          background-position:center;
+          background-size: cover;
+          background-position-y:30%;
+          text-align: center;
+          border: .125rem solid white;
+          margin-bottom: .1875rem;
+          .fondo_canon{
+            background-color: #ffa51d5e;
+            width: 100%;
+            height: 6.25rem;
+            a{
+              background-color: rgba(0, 0, 0, 0.861);
+              color: white;
+              padding: .5rem 1.875rem;
+              border-radius: 1.25rem;
+              border: .0625rem solid white;
+              font-size: 1.25rem;
+              position: relative;
+              top: 2.5rem;
+              font-family: 'Roboto', sans-serif;
+              text-decoration: none;
+            }
+          }
+        }
+        .sony{
+          width: 100%;
+          height: 6.25rem;
+          background-image: url(../assets/Inicio/sony.jpg);
+          background-position:center;
+          background-size: cover;
+          background-position-y:37%;
+          text-align: center;
+          border: .125rem solid white;
+          .fondo_sony{
+            background-color: rgba(0, 0, 0, 0.529);
+            width: 100%;
+            height: 6.25rem;
+            a{
+              background-color: rgba(0, 0, 0, 0.861);
+              color: white;
+              padding: .5rem 1.875rem;
+              border-radius: 1.25rem;
+              border: .0625rem solid white;
+              font-size: 1.25rem;
+              position: relative;
+              top: 2.5rem;
+              font-family: 'Roboto', sans-serif;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,11 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100&display=swap');
-
-/*
-  font-family: 'Poppins', sans-serif;
-  font-family: 'Roboto', sans-serif;
-*/
-
-*{
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100&display=swap");
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -13,57 +7,45 @@
   animation: transitionIn 0.75s;
 }
 
-@keyframes transitionIn {
-  from{
-    opacity: 0;
-    transform: rotateX(-10deg);
-  }
-  to{
-    opacity: 1;
-    transform: rotateX(0deg);
-  }
-}
-
-/* Body */
-
-body{
+/*
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto', sans-serif;
+*/
+body {
   background-color: #000;
 }
 
-.index{
+.index {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 6.25rem 1fr 11.5rem;
 }
 
-.productos{
+.productos {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 6.25rem 1fr 11.5rem;
 }
 
-.nosotros{
+.nosotros {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 6.25rem 1fr 11.5rem;
 }
 
-.galeria{
+.galeria {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 6.25rem 1fr 11.5rem;
 }
 
-.contacto{
+.contacto {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 6.25rem 1fr 11.5rem;
 }
 
-
-/* Comienza Header*/
-
-.container_header{
+body .index header .container_header, body .productos header .container_header, body .galeria header .container_header, body .nosotros header .container_header, body .contacto header .container_header {
   width: 100%;
   height: 6.25rem;
   background-color: #000;
@@ -71,8 +53,7 @@ body{
   position: relative;
   z-index: 100000;
 }
-
-nav{
+body .index header .container_header nav, body .productos header .container_header nav, body .galeria header .container_header nav, body .nosotros header .container_header nav, body .contacto header .container_header nav {
   height: 6.25rem;
   width: 100%;
   display: flex;
@@ -80,19 +61,34 @@ nav{
   justify-content: space-between;
   align-items: center;
 }
-
-.bar-btn{
+body .index header .container_header nav img, body .productos header .container_header nav img, body .galeria header .container_header nav img, body .nosotros header .container_header nav img, body .contacto header .container_header nav img {
+  width: 7rem;
+  margin-left: 25px;
+}
+body .index header .container_header nav #check, body .productos header .container_header nav #check, body .galeria header .container_header nav #check, body .nosotros header .container_header nav #check, body .contacto header .container_header nav #check {
+  display: none;
+}
+body .index header .container_header nav #check:checked ~ .nav-menu, body .productos header .container_header nav #check:checked ~ .nav-menu, body .galeria header .container_header nav #check:checked ~ .nav-menu, body .nosotros header .container_header nav #check:checked ~ .nav-menu, body .contacto header .container_header nav #check:checked ~ .nav-menu {
+  height: 100vh;
+  transition: all 0.3s;
+}
+body .index header .container_header nav #check:checked ~ .nav-menu li, body .productos header .container_header nav #check:checked ~ .nav-menu li, body .galeria header .container_header nav #check:checked ~ .nav-menu li, body .nosotros header .container_header nav #check:checked ~ .nav-menu li, body .contacto header .container_header nav #check:checked ~ .nav-menu li {
+  display: block;
+}
+body .index header .container_header nav nav-menu li a.active, body .index header .container_header nav .nav-menu li a:hover, body .productos header .container_header nav nav-menu li a.active, body .productos header .container_header nav .nav-menu li a:hover, body .galeria header .container_header nav nav-menu li a.active, body .galeria header .container_header nav .nav-menu li a:hover, body .nosotros header .container_header nav nav-menu li a.active, body .nosotros header .container_header nav .nav-menu li a:hover, body .contacto header .container_header nav nav-menu li a.active, body .contacto header .container_header nav .nav-menu li a:hover {
+  color: white;
+  transition: all 0.3s;
+}
+body .index header .container_header nav .bar-btn, body .productos header .container_header nav .bar-btn, body .galeria header .container_header nav .bar-btn, body .nosotros header .container_header nav .bar-btn, body .contacto header .container_header nav .bar-btn {
   font-size: 1.5625rem;
   color: white;
   margin-right: 1.8rem;
   cursor: pointer;
 }
-
-.bar-btn i{
-  color:white;
+body .index header .container_header nav .bar-btn i, body .productos header .container_header nav .bar-btn i, body .galeria header .container_header nav .bar-btn i, body .nosotros header .container_header nav .bar-btn i, body .contacto header .container_header nav .bar-btn i {
+  color: white;
 }
-
-.nav-menu{
+body .index header .container_header nav .nav-menu, body .productos header .container_header nav .nav-menu, body .galeria header .container_header nav .nav-menu, body .nosotros header .container_header nav .nav-menu, body .contacto header .container_header nav .nav-menu {
   position: fixed;
   width: 100%;
   height: 0vh;
@@ -101,379 +97,387 @@ nav{
   text-align: center;
   padding-left: 0rem;
 }
-
-.nav-menu li{
+body .index header .container_header nav .nav-menu li, body .productos header .container_header nav .nav-menu li, body .galeria header .container_header nav .nav-menu li, body .nosotros header .container_header nav .nav-menu li, body .contacto header .container_header nav .nav-menu li {
   list-style: none;
   display: none;
   line-height: 1.875rem;
   margin: 3.125rem 0rem;
 }
-
-.nav-menu li a{
+body .index header .container_header nav .nav-menu li a, body .productos header .container_header nav .nav-menu li a, body .galeria header .container_header nav .nav-menu li a, body .nosotros header .container_header nav .nav-menu li a, body .contacto header .container_header nav .nav-menu li a {
   text-decoration: none;
   color: black;
   font-size: 1rem;
   text-transform: uppercase;
   font-weight: 600;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   text-align: center;
 }
 
-nav-menu li a.active, .nav-menu li a:hover{
-  color: #ffff;
-  transition: all 0.3s;
-}
-
-#check{
-  display: none;
-}
-
-#check:checked ~ .nav-menu{
-  height: 100vh;
-  transition: all 0.3s;
-}
-
-#check:checked ~ .nav-menu li{
-  display: block;
-}
-
-.logo_siri img{
-  width: 7rem;
-  margin-left: 25px;
-}
-
-/* Termina Header*/
-
-/*Comienza Inicio*/
-
-
-.container_categorias{
-  font-family: 'Roboto', sans-serif;
-  display: flex;
-  flex-direction: column;
-  gap: 1.25rem;
-  justify-content: space-around;
-  align-items: center;
-  margin: 3.125rem .625rem;
-}
-
-.categoria_productos,
-.categoria_mayorista,
-.categoria_ofertas{
-  display: flex;
-  flex-direction: row;
-  font-size: 1.125rem;
-  border-radius: .625rem;
-  padding: .625rem 0rem .625rem .625rem;
-  transition: all 0.3s;
-  width: 83%;
-  box-shadow: 0rem 0rem .625rem white;
-}
-
-.categoria_productos a,
-.categoria_mayorista a,
-.categoria_ofertas a{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: .625rem;
-  font-family: 'Roboto', sans-serif;
-  text-decoration: none;
-}
-
-.categoria_productos a h3,
-.categoria_mayorista a h3,
-.categoria_ofertas a h3{
-  color: white;
-  margin-bottom: 0rem;
-}
-
-
-.container_productos{
-  display: grid;
-  grid-template-columns: repeat(
-    auto-fit, minmax(240px , 1fr) );
-  ;
-  gap: 1.25rem;
-  margin:0rem 0rem 2.5rem 1.875rem;
-  transition: all 0.3s;
-}
-
-.producto_apple{
-  font-family: 'Roboto', sans-serif;
-  display: flex;
-  flex-direction: column;
-  transition: all 0.3s;
-  margin-left: 1.25rem;
-}
-
-.producto_apple h3{
-  margin-bottom: 0rem;
-  transition: all 0.3s;
-  color: white;
-}
-
-.producto_apple p{
-  color:grey;
-  margin-bottom: 0rem;
-  transition: all 0.3s;
-}
-
-.producto_apple img{
-  width: 13.125rem;
-  margin: .4375rem 0rem;
-  transition: all 0.3s;
-}
-
-.boton_producto{
-  padding: .625rem 0rem;
-  border-radius: .625rem;
-  padding: .625rem .625rem;
-  border: .0625rem solid white;
-  width: 5.625rem;
-  text-align: center;
-  transition: all 0.3s;
-}
-
-.boton_producto a{
-  color: white;
-  font-family: 'Roboto', sans-serif;
-  text-decoration: none;
-  transition: all 0.3s;
-}
-
-.container_fotografia{
-  width: 100%;
-  margin: 1.875rem 0rem;
-  transition: all 0.3s;
-}
-
-.container_fotografia h2{
-  color: white;
-  font-family: 'Poppins', sans-serif;
-  text-align: center;
-  box-shadow: 0rem 0rem .625rem white;
-  padding: .625rem;
-  margin-bottom: 2rem;
-  transition: all 0.3s;
-}
-
-.nikon{
-  width: 100%;
-  height: 6.25rem;
-  background-image: url(../assets/Inicio/nikon.jpg);
-  background-position:center;
-  background-size: cover;
-  background-position-y:26%;
-  text-align: center;
-  border: .125rem solid white;
-  margin-bottom: .1875rem;
-}
-
-.fondo_nikon{
-  background-color: rgba(0, 0, 0, 0.462);
-  width: 100%;
-  height: 6.25rem;
-}
-
-.nikon a, .canon a, .sony a{
-  background-color: rgba(0, 0, 0, 0.861);
-  color: white;
-  padding: .5rem 1.875rem;
-  border-radius: 1.25rem;
-  border: .0625rem solid white;
-  font-size: 1.25rem;
-  position: relative;
-  top: 2.5rem;
-  font-family: 'Roboto', sans-serif;
-  text-decoration: none;
-}
-
-.canon{
-  width: 100%;
-  height: 6.25rem;
-  background-image: url(../assets/Inicio/canon.jpg);
-  background-position:center;
-  background-size: cover;
-  background-position-y:30%;
-  text-align: center;
-  border: .125rem solid white;
-  margin-bottom: .1875rem;
-}
-
-.fondo_canon{
-  background-color: #ffa51d5e;
-  width: 100%;
-  height: 6.25rem;
-}
-
-
-.sony{
-  width: 100%;
-  height: 6.25rem;
-  background-image: url(../assets/Inicio/sony.jpg);
-  background-position:center;
-  background-size: cover;
-  background-position-y:37%;
-  text-align: center;
-  border: .125rem solid white;
-}
-
-.fondo_sony{
-  background-color: rgba(0, 0, 0, 0.529);
-  width: 100%;
-  height: 6.25rem;
-}
-
-/*Termina Inicio*/
-
-/* Comienza Footer*/
-
-footer{
+body .index footer, body .productos footer, body .galeria footer, body .nosotros footer, body .contacto footer {
   background-color: rgb(0, 0, 0);
 }
-
-.container_footer{
+body .index footer .container_footer, body .productos footer .container_footer, body .galeria footer .container_footer, body .nosotros footer .container_footer, body .contacto footer .container_footer {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   transition: all 0.3s;
 }
-
-.ul_footer{
+body .index footer .container_footer .navbar_footer .ul_footer, body .productos footer .container_footer .navbar_footer .ul_footer, body .galeria footer .container_footer .navbar_footer .ul_footer, body .nosotros footer .container_footer .navbar_footer .ul_footer, body .contacto footer .container_footer .navbar_footer .ul_footer {
   display: flex;
   flex-direction: column;
-  gap: .3125rem;
-  padding-left: .625rem;
+  gap: 0.3125rem;
+  padding-left: 0.625rem;
 }
-
-.ul_footer li{
-    list-style: none;
-
+body .index footer .container_footer .navbar_footer .ul_footer li, body .productos footer .container_footer .navbar_footer .ul_footer li, body .galeria footer .container_footer .navbar_footer .ul_footer li, body .nosotros footer .container_footer .navbar_footer .ul_footer li, body .contacto footer .container_footer .navbar_footer .ul_footer li {
+  list-style: none;
 }
-
-.navbar_footer ul li a{
+body .index footer .container_footer .navbar_footer .ul_footer li a, body .productos footer .container_footer .navbar_footer .ul_footer li a, body .galeria footer .container_footer .navbar_footer .ul_footer li a, body .nosotros footer .container_footer .navbar_footer .ul_footer li a, body .contacto footer .container_footer .navbar_footer .ul_footer li a {
   color: white;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   text-decoration: none;
 }
-
-.redes_subscripcion{
+body .index footer .container_footer .redes_subscripcion, body .productos footer .container_footer .redes_subscripcion, body .galeria footer .container_footer .redes_subscripcion, body .nosotros footer .container_footer .redes_subscripcion, body .contacto footer .container_footer .redes_subscripcion {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-right: 1.25rem;
-  gap: .625rem;
+  gap: 0.625rem;
 }
-
-.redes_footer{
-  margin: .625rem 0rem;
+body .index footer .container_footer .redes_subscripcion .redes_footer, body .productos footer .container_footer .redes_subscripcion .redes_footer, body .galeria footer .container_footer .redes_subscripcion .redes_footer, body .nosotros footer .container_footer .redes_subscripcion .redes_footer, body .contacto footer .container_footer .redes_subscripcion .redes_footer {
+  margin: 0.625rem 0rem;
   display: flex;
   flex-direction: row;
 }
-
-.redes_footer a img{
+body .index footer .container_footer .redes_subscripcion .redes_footer a img, body .productos footer .container_footer .redes_subscripcion .redes_footer a img, body .galeria footer .container_footer .redes_subscripcion .redes_footer a img, body .nosotros footer .container_footer .redes_subscripcion .redes_footer a img, body .contacto footer .container_footer .redes_subscripcion .redes_footer a img {
   width: 2.5rem;
 }
-
-.suscripcion{
+body .index footer .container_footer .redes_subscripcion .suscripcion, body .productos footer .container_footer .redes_subscripcion .suscripcion, body .galeria footer .container_footer .redes_subscripcion .suscripcion, body .nosotros footer .container_footer .redes_subscripcion .suscripcion, body .contacto footer .container_footer .redes_subscripcion .suscripcion {
   display: flex;
   flex-direction: column;
-  border: .0625rem solid white;
-  border-radius: .625rem;
+  border: 0.0625rem solid white;
+  border-radius: 0.625rem;
   max-width: 9.375rem;
 }
-
-.suscripcion input{
-  padding: .3125rem;
-  margin: .3125rem;
+body .index footer .container_footer .redes_subscripcion .suscripcion input, body .productos footer .container_footer .redes_subscripcion .suscripcion input, body .galeria footer .container_footer .redes_subscripcion .suscripcion input, body .nosotros footer .container_footer .redes_subscripcion .suscripcion input, body .contacto footer .container_footer .redes_subscripcion .suscripcion input {
+  padding: 0.3125rem;
+  margin: 0.3125rem;
   border: transparent;
   background-color: transparent;
   text-align: center;
   max-width: 8.75rem;
   color: white;
 }
-
-.suscripcion input::placeholder{
-  color:white;
+body .index footer .container_footer .redes_subscripcion .suscripcion input::placeholder, body .productos footer .container_footer .redes_subscripcion .suscripcion input::placeholder, body .galeria footer .container_footer .redes_subscripcion .suscripcion input::placeholder, body .nosotros footer .container_footer .redes_subscripcion .suscripcion input::placeholder, body .contacto footer .container_footer .redes_subscripcion .suscripcion input::placeholder {
+  color: white;
 }
-
-.suscripcion button{
-  font-family: 'Roboto', sans-serif;
-  padding: .6875rem 3.25rem;
+body .index footer .container_footer .redes_subscripcion .suscripcion button, body .productos footer .container_footer .redes_subscripcion .suscripcion button, body .galeria footer .container_footer .redes_subscripcion .suscripcion button, body .nosotros footer .container_footer .redes_subscripcion .suscripcion button, body .contacto footer .container_footer .redes_subscripcion .suscripcion button {
+  font-family: "Roboto", sans-serif;
+  padding: 0.6875rem 3.25rem;
   border: transparent;
   background-color: white;
   color: black;
-  border-radius: 0rem 0rem .4375rem .4375rem;
+  border-radius: 0rem 0rem 0.4375rem 0.4375rem;
 }
 
-/*Termina Footer*/
-
-/*Comienza Nosotros*/
-
-.titulo_nosotros{
-  text-align: center;
-  margin: 1.625rem 0rem;
-  font-family: 'Poppins', sans-serif;
-  color: white;
+body .index main .container_categorias {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  justify-content: space-around;
+  align-items: center;
+  margin: 3.125rem 0.625rem;
 }
-
-.texto_nosotros{
-  margin: .625rem 1.875rem;
-  font-family: 'Roboto', sans-serif;
-  padding: 0rem .5625rem ;
-  color: white;
+body .index main .container_categorias .categoria_productos {
+  display: flex;
+  flex-direction: row;
   font-size: 1.125rem;
+  border-radius: 0.625rem;
+  padding: 0.625rem 0rem 0.625rem 0.625rem;
+  transition: all 0.3s;
+  width: 83%;
+  box-shadow: 0rem 0rem 0.625rem white;
 }
-
-/*Termina Nosotros*/
-
-/*Comienza Producto*/
-
-.titulo_productos{
-  text-align: center;
-  margin: .625rem 0rem;
-  font-family: 'Poppins', sans-serif;
-  font-size: .875rem;
+body .index main .container_categorias .categoria_productos a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.625rem;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+}
+body .index main .container_categorias .categoria_productos a h3 {
+  color: white;
+  margin-bottom: 0rem;
+}
+body .index main .container_categorias .categoria_mayorista {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.125rem;
+  border-radius: 0.625rem;
+  padding: 0.625rem 0rem 0.625rem 0.625rem;
+  transition: all 0.3s;
+  width: 83%;
+  box-shadow: 0rem 0rem 0.625rem white;
+}
+body .index main .container_categorias .categoria_mayorista a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.625rem;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+}
+body .index main .container_categorias .categoria_mayorista a h3 {
+  color: white;
+  margin-bottom: 0rem;
+}
+body .index main .container_categorias .categoria_ofertas {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.125rem;
+  border-radius: 0.625rem;
+  padding: 0.625rem 0rem 0.625rem 0.625rem;
+  transition: all 0.3s;
+  width: 83%;
+  box-shadow: 0rem 0rem 0.625rem white;
+}
+body .index main .container_categorias .categoria_ofertas a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.625rem;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+}
+body .index main .container_categorias .categoria_ofertas a h3 {
+  color: white;
+  margin-bottom: 0rem;
+}
+body .index main .container_productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 1.25rem;
+  margin: 0rem 0rem 2.5rem 1.875rem;
+  transition: all 0.3s;
+}
+body .index main .container_productos .producto_apple {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s;
+  margin-left: 1.25rem;
+}
+body .index main .container_productos .producto_apple h3 {
+  margin-bottom: 0rem;
+  transition: all 0.3s;
   color: white;
 }
+body .index main .container_productos .producto_apple p {
+  color: grey;
+  margin-bottom: 0rem;
+  transition: all 0.3s;
+}
+body .index main .container_productos .producto_apple img {
+  width: 13.125rem;
+  margin: 0.4375rem 0rem;
+  transition: all 0.3s;
+}
+body .index main .container_productos .producto_apple .boton_producto {
+  padding: 0.625rem 0rem;
+  border-radius: 0.625rem;
+  padding: 0.625rem 0.625rem;
+  border: 0.0625rem solid white;
+  width: 5.625rem;
+  text-align: center;
+  transition: all 0.3s;
+}
+body .index main .container_productos .producto_apple .boton_producto a {
+  color: white;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+body .index main .container_fotografia {
+  width: 100%;
+  margin: 1.875rem 0rem;
+  transition: all 0.3s;
+}
+body .index main .container_fotografia h2 {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  box-shadow: 0rem 0rem 0.625rem white;
+  padding: 0.625rem;
+  margin-bottom: 2rem;
+  transition: all 0.3s;
+}
+body .index main .container_fotografia .nikon {
+  width: 100%;
+  height: 6.25rem;
+  background-image: url(../assets/Inicio/nikon.jpg);
+  background-position: center;
+  background-size: cover;
+  background-position-y: 26%;
+  text-align: center;
+  border: 0.125rem solid white;
+  margin-bottom: 0.1875rem;
+}
+body .index main .container_fotografia .nikon .fondo_nikon {
+  background-color: rgba(0, 0, 0, 0.462);
+  width: 100%;
+  height: 6.25rem;
+}
+body .index main .container_fotografia .nikon .fondo_nikon a {
+  background-color: rgba(0, 0, 0, 0.861);
+  color: white;
+  padding: 0.5rem 1.875rem;
+  border-radius: 1.25rem;
+  border: 0.0625rem solid white;
+  font-size: 1.25rem;
+  position: relative;
+  top: 2.5rem;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+}
+body .index main .container_fotografia .canon {
+  width: 100%;
+  height: 6.25rem;
+  background-image: url(../assets/Inicio/canon.jpg);
+  background-position: center;
+  background-size: cover;
+  background-position-y: 30%;
+  text-align: center;
+  border: 0.125rem solid white;
+  margin-bottom: 0.1875rem;
+}
+body .index main .container_fotografia .canon .fondo_canon {
+  background-color: rgba(255, 165, 29, 0.368627451);
+  width: 100%;
+  height: 6.25rem;
+}
+body .index main .container_fotografia .canon .fondo_canon a {
+  background-color: rgba(0, 0, 0, 0.861);
+  color: white;
+  padding: 0.5rem 1.875rem;
+  border-radius: 1.25rem;
+  border: 0.0625rem solid white;
+  font-size: 1.25rem;
+  position: relative;
+  top: 2.5rem;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+}
+body .index main .container_fotografia .sony {
+  width: 100%;
+  height: 6.25rem;
+  background-image: url(../assets/Inicio/sony.jpg);
+  background-position: center;
+  background-size: cover;
+  background-position-y: 37%;
+  text-align: center;
+  border: 0.125rem solid white;
+}
+body .index main .container_fotografia .sony .fondo_sony {
+  background-color: rgba(0, 0, 0, 0.529);
+  width: 100%;
+  height: 6.25rem;
+}
+body .index main .container_fotografia .sony .fondo_sony a {
+  background-color: rgba(0, 0, 0, 0.861);
+  color: white;
+  padding: 0.5rem 1.875rem;
+  border-radius: 1.25rem;
+  border: 0.0625rem solid white;
+  font-size: 1.25rem;
+  position: relative;
+  top: 2.5rem;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+}
 
-.container_marcas{
+body .productos main .titulo_productos {
+  text-align: center;
+  margin: 0.625rem 0rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.875rem;
+  color: white;
+}
+body .productos main .container_marcas {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: .9375rem;
+  gap: 0.9375rem;
   margin: 1.875rem 0rem;
 }
-
-.marcas{
+body .productos main .container_marcas .marcas {
   border-radius: 50%;
   border: transparent;
   background-color: transparent;
-  box-shadow: 0rem 0rem .625rem white;
-  }
-
-.marcas img{
+  box-shadow: 0rem 0rem 0.625rem white;
+}
+body .productos main .container_marcas .marcas img {
   width: 3.75rem;
   border-radius: 50%;
-  border: .0625rem solid black;
+  border: 0.0625rem solid black;
 }
-
-.gift{
+body .productos main .container_marcas .gift {
   border-radius: 50%;
   border: transparent;
   background-color: transparent;
-  box-shadow: 0rem 0rem .625rem white;
+  box-shadow: 0rem 0rem 0.625rem white;
 }
-
-.gift img{
+body .productos main .container_marcas .gift img {
   width: 3.75rem;
   border-radius: 50%;
-  border: .0625rem solid black;
+  border: 0.0625rem solid black;
 }
-
-.subtitulo_producto{
+body .productos main .container_productos_apple {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.875rem;
+  margin: 2.8125rem 0.625rem 1.5625rem 0rem;
+}
+body .productos main .container_productos_apple div {
+  width: 15rem;
+}
+body .productos main .container_productos_nikon {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.875rem;
+  margin: 2.8125rem 0.625rem 1.5625rem 0rem;
+}
+body .productos main .container_productos_nikon div {
+  width: 15rem;
+}
+body .productos main .container_productos_canon {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.875rem;
+  margin: 2.8125rem 0.625rem 1.5625rem 0rem;
+}
+body .productos main .container_productos_canon div {
+  width: 15rem;
+}
+body .productos main .container_productos_sony {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.875rem;
+  margin: 2.8125rem 0.625rem 1.5625rem 0rem;
+}
+body .productos main .container_productos_sony div {
+  width: 15rem;
+}
+body .productos main .subtitulo_producto {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -481,71 +485,26 @@ footer{
   background-color: black;
   color: white;
   text-align: center;
-  font-family: 'Roboto', sans-serif;
-  padding: .625rem;
-  box-shadow: 0rem 0rem .625rem white;
+  font-family: "Roboto", sans-serif;
+  padding: 0.625rem;
+  box-shadow: 0rem 0rem 0.625rem white;
 }
-
-.subtitulo_producto a img{
-  width: 3.125rem;
-  margin-right:0.625rem;
-}
-
-.subtitulo_producto h2{
+body .productos main .subtitulo_producto h2 {
   margin-bottom: 0rem;
-  margin-left:0.625rem;
+  margin-left: 0.625rem;
+}
+body .productos main .subtitulo_producto a img {
+  width: 3.125rem;
+  margin-right: 0.625rem;
 }
 
-
-
-.container_productos_apple,
-.container_productos_nikon,
-.container_productos_canon,
-.container_productos_sony{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1.875rem;
-  margin: 2.8125rem .625rem 1.5625rem 0rem;
-}
-
-.articulo{
-  text-align: center;
-  font-family: 'Roboto', sans-serif;
-}
-
-.articulo img{
-  width: 15rem;
-  border-radius: .3125rem;
-  margin-bottom: .9375rem;
-}
-
-.articulo p{
-  color: grey;
-}
-
-.articulo button{
-  padding: .625rem 1.875rem;
-  border-radius: .625rem;
-  margin: .625rem;
-  background-color: transparent;
-  border: .0625rem solid black;
-}
-
-
-/*Termina Producto*/
-
-/*Comienza Galeria*/
-
-.titulo_galeria{
+body .galeria main .titulo_galeria {
   text-align: center;
   margin: 1.875rem 0rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   color: white;
 }
-
-.container_fotos_galeria{
+body .galeria main .container_fotos_galeria {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -553,40 +512,53 @@ footer{
   gap: 1.625rem;
   margin-bottom: 3.125rem;
 }
-
-.container_fotos_galeria img{
-  box-shadow: 0rem 0rem .625rem white;
+body .galeria main .container_fotos_galeria img {
+  box-shadow: 0rem 0rem 0.625rem white;
+  width: 17rem;
 }
 
-/*Termina Galeria*/
-
-/*Comienza Contacto*/
-
-.titulo_contacto{
+body .nosotros .main_nosotros section .titulo_nosotros {
   text-align: center;
-  margin-top: 1.875rem;
-  margin-bottom: .625rem;
-  font-family: 'Poppins', sans-serif;
+  margin: 1.625rem 0rem;
+  font-family: "Poppins", sans-serif;
   color: white;
 }
+body .nosotros .main_nosotros section .texto_nosotros {
+  margin: 0.625rem 1.875rem;
+  font-family: "Roboto", sans-serif;
+  padding: 0rem 0.5625rem;
+  color: white;
+  font-size: 1.125rem;
+}
+body .nosotros .main_nosotros section .texto_nosotros h2 {
+  font-weight: bold;
+  margin-bottom: 1.25rem;
+}
+body .nosotros .main_nosotros section .texto_nosotros spam {
+  font-weight: bold;
+}
 
-.redes_contacto{
+body .main_contacto .titulo_contacto {
+  text-align: center;
+  margin-top: 1.875rem;
+  margin-bottom: 0.625rem;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+body .main_contacto .redes_contacto {
   display: flex;
   flex-direction: row;
   justify-content: center;
   gap: 1.25rem;
   margin: 1.875rem 0rem 2.5rem 0rem;
 }
-
-.redes_contacto a img{
+body .main_contacto .redes_contacto a img {
   width: 3.125rem;
 }
-
-.container_formulario{
-  margin:50px 0px;
+body .main_contacto .container_formulario {
+  margin: 3.125rem 0rem;
 }
-
-.formulario_contacto{
+body .main_contacto .container_formulario .formulario_contacto {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -595,173 +567,72 @@ footer{
   transition: all 0.3s;
   align-items: center;
 }
-
-.nombre_apellido_email{
+body .main_contacto .container_formulario .formulario_contacto .nombre_apellido_email {
   display: flex;
   flex-direction: column;
   gap: 1.3125rem;
   transition: all 0.3s;
 }
-
-.nombre_apellido_email input{
-  font-family: 'Roboto', sans-serif;
-  border-radius: .3125rem;
-  border: .0625rem solid black;
-  padding: .625rem 6.75rem .5rem .3125rem;
+body .main_contacto .container_formulario .formulario_contacto .nombre_apellido_email input {
+  font-family: "Roboto", sans-serif;
+  border-radius: 0.3125rem;
+  border: 0.0625rem solid black;
+  padding: 0.625rem 6.75rem 0.5rem 0.3125rem;
   transition: all 0.3s;
 }
-
-.formulario_contacto textarea{
-  padding: .3125rem 0rem 0rem .3125rem;
+body .main_contacto .container_formulario .formulario_contacto .textarea {
+  padding: 0.3125rem 0rem 0rem 0.3125rem;
   resize: none;
-  font-family: 'Roboto', sans-serif;
-  border-radius: .3125rem;
-  border: .0625rem solid black;
+  font-family: "Roboto", sans-serif;
+  border-radius: 0.3125rem;
+  border: 0.0625rem solid black;
   max-width: 17.5rem;
   transition: all 0.3s;
+  margin-right: 0.875rem;
 }
-
-.boton_formulario{
-  text-align: center;
-}
-
-.boton_formulario input{
-  padding: .625rem 1.5625rem;
-  border-radius: .3125rem;
-  font-family: 'Roboto', sans-serif;
-  font-weight: bold;
-  border: .0625rem solid black;
-  background-color: transparent;
-  transition: all 0.3s;
-}
-
-.mail_ubicacion{
+body .main_contacto .mail_ubicacion {
   margin-bottom: 2.5rem;
 }
-
-.email{
-  color:white;
+body .main_contacto .mail_ubicacion .email {
+  color: white;
   display: flex;
-  flex-direction: row;
-  gap: .625rem;
+  flex-direction: column;
+  gap: 0.3125rem;
   justify-content: center;
+  text-align: center;
 }
-
-.email p,
-.ubicacion p{
+body .main_contacto .mail_ubicacion .email p {
   font-size: 1.25rem;
-  margin-top: .3125rem;
 }
-
-.email a img{
+body .main_contacto .mail_ubicacion .email a img {
   width: 2.5rem;
 }
-
-.ubicacion{
-  color:white;
+body .main_contacto .mail_ubicacion .ubicacion {
+  color: white;
   display: flex;
-  flex-direction: row;
-  gap: .625rem;
+  flex-direction: column;
+  gap: 0.3125rem;
   justify-content: center;
+  text-align: center;
 }
-
-.ubicacion a img{
+body .main_contacto .mail_ubicacion .ubicacion p {
+  font-size: 1.25rem;
+}
+body .main_contacto .mail_ubicacion .ubicacion a img {
   width: 2.5rem;
-  margin-left: .875rem;
 }
 
-/*Termina Contacto*/
+/*.boton_formulario{
+        text-align: center;
+        input{
+          padding: .625rem 1.5625rem;
+          border-radius: .3125rem;
+          font-family: 'Roboto', sans-serif;
+          font-weight: bold;
+          border: .0625rem solid black;
+          background-color: transparent;
+          transition: all 0.3s;
+        }
+      }*/
 
-@media screen and (min-width: 48rem){
-
-  .active{
-    box-shadow: 0rem 0rem .625rem white;
-    border-radius: .3125rem;
-  }
-
-  .redes_contacto{
-    margin: 2.5rem 0rem 3.5rem 0rem;
-  }
-
-  .container_footer{
-    margin-top: 3rem;
-  }
-
-  .redes_subscripcion{
-    flex-direction: row;
-    gap: 1.25rem;
-  }
-
-  .redes_footer{
-    gap: .625rem;
-  }
-
-  .suscripcion{
-    flex-direction: row;
-    margin-right: 7.5rem;
-    gap: .3125rem;
-  }
-
-  .suscripcion input{
-    padding: 0rem;
-    border: transparent;
-    background-color: transparent;
-    text-align: center;
-    max-width: 8.75rem;
-  }
-
-  .suscripcion button{
-    border-radius: .4375rem;
-    padding: .6875rem 2.1875rem;
-  }
-
-  .formulario_contacto{
-    display: flex;
-    flex-direction: row;
-  }
-
-}
-
-@media screen and (min-width: 56.25rem){
-  .container_categorias{
-    flex-direction: row;
-  }
-
-  .categoria_productos,
-  .categoria_mayorista,
-  .categoria_ofertas{
-    justify-content: center;
-    margin-right: .625rem;
-    margin-left: .625rem;
-  }
-}
-
-@media screen and (min-width: 64rem){
-  .bar-btn{
-    display:none;
-  }
-
-  .nav-menu{
-    position: relative;
-    height: 6.25rem;
-    top: 0;
-    background: none;
-    transition: none;
-    text-align: right;
-    margin-right: 1.25rem;
-    margin-bottom: 0rem;
-  }
-
-  .nav-menu li{
-    display: inline-block;
-    line-height: 6.25rem;
-    margin: 0;
-    transition: none;
-  }
-
-  .nav-menu li a{
-    font-size: 1.25rem;
-    padding: 0rem .625rem;
-    color: white;
-  }
-}
+/*# sourceMappingURL=style.css.map */
