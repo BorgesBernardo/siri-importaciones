@@ -4,8 +4,8 @@ body{
       .titulo_galeria{
         text-align: center;
         margin: 1.875rem 0rem;
-        font-family: 'Poppins', sans-serif;
-        color: white;
+        font-family: $font-secundaria;
+        color: $color-texto;
       }
       .container_fotos_galeria{
         display: flex;
@@ -15,7 +15,7 @@ body{
         gap: 1.625rem;
         margin-bottom: 3.125rem;
         img{
-          box-shadow: 0rem 0rem .625rem white;
+          box-shadow: 0rem 0rem .625rem $color-shadow1;
           width: 17rem;
         }
       }

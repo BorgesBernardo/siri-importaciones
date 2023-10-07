@@ -2,7 +2,7 @@
 
 /*
   font-family: 'Poppins', sans-serif;
-  font-family: 'Roboto', sans-serif;
+  font-family: $font-primaria;
 */
 
 *{
@@ -148,7 +148,7 @@ nav-menu li a.active, .nav-menu li a:hover{
 
 
 .container_categorias{
-  font-family: 'Roboto', sans-serif;
+  font-family: $font-primaria;
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
@@ -177,7 +177,7 @@ nav-menu li a.active, .nav-menu li a:hover{
   flex-direction: row;
   align-items: center;
   gap: .625rem;
-  font-family: 'Roboto', sans-serif;
+  font-family: $font-primaria;
   text-decoration: none;
 }
 
@@ -200,7 +200,7 @@ nav-menu li a.active, .nav-menu li a:hover{
 }
 
 .producto_apple{
-  font-family: 'Roboto', sans-serif;
+  font-family: $font-primaria;
   display: flex;
   flex-direction: column;
   transition: all 0.3s;
@@ -237,7 +237,7 @@ nav-menu li a.active, .nav-menu li a:hover{
 
 .boton_producto a{
   color: white;
-  font-family: 'Roboto', sans-serif;
+  font-family: $font-primaria;
   text-decoration: none;
   transition: all 0.3s;
 }
@@ -285,7 +285,7 @@ nav-menu li a.active, .nav-menu li a:hover{
   font-size: 1.25rem;
   position: relative;
   top: 2.5rem;
-  font-family: 'Roboto', sans-serif;
+  font-family: $font-primaria;
   text-decoration: none;
 }
 
@@ -355,7 +355,7 @@ footer{
 
 .navbar_footer ul li a{
   color: white;
-  font-family: 'Roboto', sans-serif;
+  font-family: $font-primaria;
   text-decoration: none;
 }
 
@@ -400,7 +400,7 @@ footer{
 }
 
 .suscripcion button{
-  font-family: 'Roboto', sans-serif;
+  font-family: $font-primaria;
   padding: .6875rem 3.25rem;
   border: transparent;
   background-color: white;
@@ -421,7 +421,7 @@ footer{
 
 .texto_nosotros{
   margin: .625rem 1.875rem;
-  font-family: 'Roboto', sans-serif;
+  font-family: $font-primaria;
   padding: 0rem .5625rem ;
   color: white;
   font-size: 1.125rem;
@@ -490,7 +490,7 @@ footer{
   background-color: black;
   color: white;
   text-align: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: $font-primaria;
   padding: .625rem;
   box-shadow: 0rem 0rem .625rem white;
 }
@@ -523,30 +523,6 @@ footer{
 .container_productos_sony div{
   width: 15rem;
 }
-
-/*.articulo{
-  text-align: center;
-  font-family: 'Roboto', sans-serif;
-}
-
-.articulo img{
-  width: 15rem;
-  border-radius: .3125rem;
-  margin-bottom: .9375rem;
-}
-
-.articulo p{
-  color: grey;
-}
-
-.articulo button{
-  padding: .625rem 1.875rem;
-  border-radius: .625rem;
-  margin: .625rem;
-  background-color: transparent;
-  border: .0625rem solid black;
-}
-
 
 /*Termina Producto*/
 
@@ -619,7 +595,7 @@ footer{
 }
 
 .nombre_apellido_email input{
-  font-family: 'Roboto', sans-serif;
+  font-family: $font-primaria;
   border-radius: .3125rem;
   border: .0625rem solid black;
   padding: .625rem 6.75rem .5rem .3125rem;
@@ -629,7 +605,7 @@ footer{
 .formulario_contacto textarea{
   padding: .3125rem 0rem 0rem .3125rem;
   resize: none;
-  font-family: 'Roboto', sans-serif;
+  font-family: $font-primaria;
   border-radius: .3125rem;
   border: .0625rem solid black;
   max-width: 17.5rem;
@@ -643,7 +619,7 @@ footer{
 .boton_formulario input{
   padding: .625rem 1.5625rem;
   border-radius: .3125rem;
-  font-family: 'Roboto', sans-serif;
+  font-family: $font-primaria;
   font-weight: bold;
   border: .0625rem solid black;
   background-color: transparent;

@@ -4,9 +4,9 @@ body{
       .titulo_productos{
         text-align: center;
         margin: .625rem 0rem;
-        font-family: 'Poppins', sans-serif;
+        font-family: $font-secundaria;
         font-size: .875rem;
-        color: white;
+        color: $color-texto;
       }
       .container_marcas{
         display: flex;
@@ -18,22 +18,22 @@ body{
           border-radius: 50%;
           border: transparent;
           background-color: transparent;
-          box-shadow: 0rem 0rem .625rem white;
+          box-shadow: 0rem 0rem .625rem $color-shadow1;
           img{
             width: 3.75rem;
             border-radius: 50%;
-            border: .0625rem solid black;
+            border: .0625rem solid $color-bordes2;
           }
         }
         .gift{
           border-radius: 50%;
           border: transparent;
           background-color: transparent;
-          box-shadow: 0rem 0rem .625rem white;
+          box-shadow: 0rem 0rem .625rem $color-shadow1;
           img{
             width: 3.75rem;
             border-radius: 50%;
-            border: .0625rem solid black;
+            border: .0625rem solid $color-bordes2
           }
         }
       }
@@ -86,12 +86,11 @@ body{
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        background-color: black;
-        color: white;
+        color: $color-texto;
         text-align: center;
-        font-family: 'Roboto', sans-serif;
+        font-family: $font-primaria;
         padding: .625rem;
-        box-shadow: 0rem 0rem .625rem white;
+        box-shadow: 0rem 0rem .625rem $color-shadow1;
         h2{
           margin-bottom: 0rem;
           margin-left:0.625rem;

@@ -1,0 +1,19 @@
+@media screen and (min-width: 56.25rem){
+  body{
+    .index{
+      main{
+        .container_categorias{
+          flex-direction: row;
+          .categoria_productos,
+          .categoria_mayorista,
+          .categoria_ofertas{
+            justify-content: center;
+            margin-right: .625rem;
+            margin-left: .625rem;
+          }
+        }
+      }
+    }
+  }
+}
+

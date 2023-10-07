@@ -1,13 +1,19 @@
-@import "./Base/reset";
-@import "./Base/typo";
+@import "./utilities/variables";
+@import "./base/reset";
+@import "./base/typo";
 @import "./layout/body";
 @import "./layout/header";
-@import "./layout/footer";
 @import "./layout/main-index";
 @import "./layout/main-productos";
 @import "./layout/main-galeria";
 @import "./layout/main-nosotros";
 @import "./layout/main-contacto";
+@import "./layout/footer";
+@import "./layout/mediaquerry/media-48rem";
+@import "./layout/mediaquerry/media-56rem";
+@import "./layout/mediaquerry/media-64rem";
+
+
 
 
 

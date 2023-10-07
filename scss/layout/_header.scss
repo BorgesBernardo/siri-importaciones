@@ -1,10 +1,14 @@
 body{
-  .index, .productos, .galeria, .nosotros, .contacto{
+  .index, 
+  .productos, 
+  .galeria, 
+  .nosotros, 
+  .contacto {
     header{
       .container_header{
         width: 100%;
         height: 6.25rem;
-        background-color: #000;
+        background-color: $bg-1;
         align-items: center;
         position: relative;
         z-index: 100000;
@@ -15,31 +19,19 @@ body{
           flex-direction: row;
           justify-content: space-between;
           align-items: center;
-          img{
-            width: 7rem;
-            margin-left: 25px;
-          }
-          #check{
-            display: none;
-          }
-          #check:checked ~ .nav-menu{
-            height: 100vh;
-            transition: all 0.3s;
-          }
-          #check:checked ~ .nav-menu li{
-            display: block;
-          }
-          nav-menu li a.active, .nav-menu li a:hover{
-            color: #ffff;
-            transition: all 0.3s;
+          .logo_siri{
+            img{
+              width: 7rem;
+              margin-left: 25px;
+            }
           }
           .bar-btn{
             font-size: 1.5625rem;
-            color: white;
+            color: $color-texto;
             margin-right: 1.8rem;
             cursor: pointer;
             i{
-              color:white;
+              color:$color-1;
             }
           }
           .nav-menu{
@@ -47,7 +39,7 @@ body{
             width: 100%;
             height: 0vh;
             top: 6.25rem;
-            background: white;
+            background: $bg-2;
             text-align: center;
             padding-left: 0rem;
             li{
@@ -57,11 +49,11 @@ body{
               margin: 3.125rem 0rem;
               a{
                 text-decoration: none;
-                color: black;
+                color: $color-texto2;
                 font-size: 1rem;
                 text-transform: uppercase;
                 font-weight: 600;
-                font-family: 'Poppins', sans-serif;
+                font-family: $font-secundaria;
                 text-align: center;
               }
             }
@@ -70,6 +62,22 @@ body{
       }
     }
   }
+}
+
+nav-menu li a.active, .nav-menu li a:hover{
+  color: $bg-2;
+  transition: all 0.3s;
+}
+
+#check{
+  display: none;
+}
+#check:checked ~ .nav-menu{
+  height: 100vh;
+  transition: all 0.3s;
+}
+#check:checked ~ .nav-menu li{
+  display: block;
 }
 
 

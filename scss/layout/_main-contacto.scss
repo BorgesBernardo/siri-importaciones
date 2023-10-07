@@ -4,8 +4,8 @@ body{
       text-align: center;
       margin-top: 1.875rem;
       margin-bottom: .625rem;
-      font-family: 'Poppins', sans-serif;
-      color: white;
+      font-family: $font-secundaria;
+      color: $color-texto;
     }
     .redes_contacto{
       display: flex;
@@ -35,29 +35,30 @@ body{
           gap: 1.3125rem;
           transition: all 0.3s;
           input{
-            font-family: 'Roboto', sans-serif;
+            font-family: $font-primaria;
             border-radius: .3125rem;
-            border: .0625rem solid black;
-            padding: .625rem 6.75rem .5rem .3125rem;
+            border: .0625rem solid $color-bordes2;
+            padding: .625rem 6.6rem .5rem .3125rem;
             transition: all 0.3s;
           }
         }
         .textarea{
-          padding: .3125rem 0rem 0rem .3125rem;
           resize: none;
-          font-family: 'Roboto', sans-serif;
+          font-family: $font-primaria;
           border-radius: .3125rem;
-          border: .0625rem solid black;
+          border: .0625rem solid $color-bordes2;
           max-width: 17.5rem;
           transition: all 0.3s;
-          margin-right: .875rem;
+        }
+        .textarea::placeholder{
+          padding: .3125rem .3125rem;
         }
       }
     }
     .mail_ubicacion{
       margin-bottom: 2.5rem;
       .email{
-        color:white;
+        color:$color-texto;
         display: flex;
         flex-direction: column;
         gap: .3125rem;
@@ -73,7 +74,7 @@ body{
         }
       }
       .ubicacion{
-        color:white;
+        color:$color-texto;
         display: flex;
         flex-direction: column;
         gap: .3125rem;
@@ -91,17 +92,3 @@ body{
     }
   }
 }
-
-
-  /*.boton_formulario{
-          text-align: center;
-          input{
-            padding: .625rem 1.5625rem;
-            border-radius: .3125rem;
-            font-family: 'Roboto', sans-serif;
-            font-weight: bold;
-            border: .0625rem solid black;
-            background-color: transparent;
-            transition: all 0.3s;
-          }
-        }*/

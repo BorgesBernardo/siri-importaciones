@@ -1,0 +1,64 @@
+@media screen and (min-width: 48rem){
+  body{
+    .index,
+    .contacto,
+    .galeria,
+    .nosotros,
+    .productos{
+      header{
+        .container_header{
+          nav{
+            .nav-menu{
+              .active{
+                box-shadow: 0rem 0rem .625rem $color-shadow1;
+                border-radius: .3125rem;
+              }
+            }
+          }
+        }
+      }
+      footer{
+        .container_footer{
+          margin-top: 3rem;
+          .redes_subscripcion{
+            flex-direction: row;
+            gap: 1.25rem;
+            .redes_footer{
+              gap: .625rem;
+            }
+            .suscripcion{
+              flex-direction: row;
+              margin-right: 7.5rem;
+              gap: .3125rem;
+              input{
+                padding: 0rem;
+                border: transparent;
+                background-color: transparent;
+                text-align: center;
+                max-width: 8.75rem;
+              }
+              button{
+                border-radius: .4375rem;
+                padding: .6875rem 2.1875rem;
+              }
+            }
+          }
+        }
+      }
+    }
+    .contacto{
+      .main_contacto{
+        .redes_contacto{
+          margin: 2.5rem 0rem 3.5rem 0rem;
+        }
+        .container_formulario{
+          .formulario_contacto{
+            display: flex;
+            flex-direction: row;
+          }
+        }
+      }
+    }
+  }
+}
+

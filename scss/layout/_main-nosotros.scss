@@ -5,14 +5,14 @@ body{
         .titulo_nosotros{
           text-align: center;
           margin: 1.625rem 0rem;
-          font-family: 'Poppins', sans-serif;
-          color: white;
+          font-family: $font-secundaria;
+          color: $color-texto;
         }
         .texto_nosotros{
           margin: .625rem 1.875rem;
-          font-family: 'Roboto', sans-serif;
+          font-family: $font-primaria;
           padding: 0rem .5625rem ;
-          color: white;
+          color: $color-texto;
           font-size: 1.125rem;
           h2{
             font-weight: bold;

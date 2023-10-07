@@ -1,0 +1,60 @@
+@media screen and (min-width: 64rem){
+  body{
+    .index,
+    .contacto,
+    .nosotros,
+    .productos,
+    .galeria{
+      header{
+        .container_header{
+          nav{
+            .bar-btn{
+              display:none;
+            }
+            .nav-menu{
+              position: relative;
+              height: 6.25rem;
+              top: 0;
+              background: none;
+              transition: none;
+              text-align: right;
+              margin-right: 1.25rem;
+              margin-bottom: 0rem;
+              li{
+                display: inline-block;
+                line-height: 6.25rem;
+                margin: 0;
+                transition: none;
+                a{
+                  font-size: 1.25rem;
+                  padding: 0rem .625rem;
+                  color: $color-texto;
+                }
+              }
+            }
+          }
+        }
+      }
+      main{
+        .mail_ubicacion{
+          .email{
+            flex-direction: row;
+            align-items: center;
+            p{
+              margin-bottom: 0rem;
+            }
+            margin-bottom: 1.25rem;
+          }
+          .ubicacion{
+            flex-direction: row;
+            align-items: center;
+            p{
+              margin-bottom: 0rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
