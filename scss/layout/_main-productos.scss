@@ -9,10 +9,7 @@ body{
         color: $color-texto;
       }
       .container_marcas{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        gap: .9375rem;
+        @include flex (row, none, center, none, 0.9375rem);
         margin: 1.875rem 0rem;
         .marcas{
           border-radius: 50%;
@@ -37,55 +34,18 @@ body{
           }
         }
       }
-      .container_productos_apple{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 1.875rem;
-        margin: 2.8125rem .625rem 1.5625rem 0rem;
-        div{
-          width: 15rem;
-        }
-      }
-      .container_productos_nikon{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 1.875rem;
-        margin: 2.8125rem .625rem 1.5625rem 0rem;
-        div{
-          width: 15rem;
-        }
-      }
-      .container_productos_canon{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 1.875rem;
-        margin: 2.8125rem .625rem 1.5625rem 0rem;
-        div{
-          width: 15rem;
-        }
-      }
+      .container_productos_apple,
+      .container_productos_nikon,
+      .container_productos_canon,
       .container_productos_sony{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 1.875rem;
+        @include flex (row, wrap, center, none, 1.875rem);
         margin: 2.8125rem .625rem 1.5625rem 0rem;
         div{
           width: 15rem;
         }
       }
       .subtitulo_producto{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
+        @include flex (row, none, space-between, center, none);
         color: $color-texto;
         text-align: center;
         font-family: $font-primaria;

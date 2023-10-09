@@ -15,10 +15,7 @@ body{
         nav{
           height: 6.25rem;
           width: 100%;
-          display: flex;
-          flex-direction: row;
-          justify-content: space-between;
-          align-items: center;
+          @include flex (row, none, space-between, center, none);
           .logo_siri{
             img{
               width: 7rem;

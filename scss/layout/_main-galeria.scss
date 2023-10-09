@@ -8,11 +8,7 @@ body{
         color: $color-texto;
       }
       .container_fotos_galeria{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 1.625rem;
+        @include flex (row, wrap, center, none, 1.625rem);
         margin-bottom: 3.125rem;
         img{
           box-shadow: 0rem 0rem .625rem $color-shadow1;

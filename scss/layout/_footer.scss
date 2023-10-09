@@ -7,6 +7,7 @@ body{
     footer{
       background-color: $bg-1;
       .container_footer{
+        @include flex (row, none, space-between, center, none);
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -14,9 +15,7 @@ body{
         transition: all 0.3s;
         .navbar_footer{
           .ul_footer{
-            display: flex;
-            flex-direction: column;
-            gap: .3125rem;
+            @include flex (column, none, none, none, 0.1325rem);
             padding-left: .625rem;
             li{
               list-style: none;
@@ -29,15 +28,11 @@ body{
           }
         }
         .redes_subscripcion{
-          display: flex;
-          flex-direction: column;
-          align-items: center;
+          @include flex (column, none, none, center, 0.625rem);
           margin-right: 1.25rem;
-          gap: .625rem;
           .redes_footer{
             margin: .625rem 0rem;
-            display: flex;
-            flex-direction: row;
+            @include flex (row, none, none, none, none);
             a{
               img{
                 width: 2.5rem;
@@ -45,8 +40,7 @@ body{
             }
           }
           .suscripcion{
-            display: flex;
-            flex-direction: column;
+            @include flex (column, none, none, none, none);
             border: .0625rem solid $color-bordes;
             border-radius: .625rem;
             max-width: 9.375rem;

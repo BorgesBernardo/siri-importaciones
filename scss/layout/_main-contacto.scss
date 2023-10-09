@@ -8,10 +8,7 @@ body{
       color: $color-texto;
     }
     .redes_contacto{
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      gap: 1.25rem;
+      @include flex (row, none, center, none, 1.25rem);
       margin: 1.875rem 0rem 2.5rem 0rem;
       a{
         img{
@@ -22,17 +19,11 @@ body{
     .container_formulario{
       margin:3.125rem 0rem;
       .formulario_contacto{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        @include flex (column, none, center, center, 1.25rem);
         margin: 0rem 1.25rem 0rem 1.25rem;
-        gap: 1.25rem;
         transition: all 0.3s;
-        align-items: center;
         .nombre_apellido_email{
-          display: flex;
-          flex-direction: column;
-          gap: 1.3125rem;
+          @include flex (column, none, none, none, 1.3125rem);
           transition: all 0.3s;
           input{
             font-family: $font-primaria;
@@ -59,10 +50,7 @@ body{
       margin-bottom: 2.5rem;
       .email{
         color:$color-texto;
-        display: flex;
-        flex-direction: column;
-        gap: .3125rem;
-        justify-content: center;
+        @include flex (column, none, center, none, 0.3125rem);
         text-align: center;
         p{
           font-size: 1.25rem;
@@ -75,10 +63,7 @@ body{
       }
       .ubicacion{
         color:$color-texto;
-        display: flex;
-        flex-direction: column;
-        gap: .3125rem;
-        justify-content: center;
+        @include flex (column, none, center, none, 0.3125rem);
         text-align: center;
         p{
           font-size: 1.25rem;

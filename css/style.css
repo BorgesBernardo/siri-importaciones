@@ -76,8 +76,10 @@ body .contacto header .container_header nav {
   width: 100%;
   display: flex;
   flex-direction: row;
+  flex-wrap: none;
   justify-content: space-between;
   align-items: center;
+  gap: none;
 }
 body .index header .container_header nav .logo_siri img,
 body .productos header .container_header nav .logo_siri img,
@@ -163,14 +165,19 @@ body .index main .container_categorias {
   font-family: "Roboto", sans-serif;
   display: flex;
   flex-direction: column;
-  gap: 1.25rem;
+  flex-wrap: none;
   justify-content: space-around;
   align-items: center;
+  gap: 1.25rem;
   margin: 3.125rem 0.625rem;
 }
 body .index main .container_categorias .categoria_productos {
   display: flex;
   flex-direction: row;
+  flex-wrap: none;
+  justify-content: none;
+  align-items: none;
+  gap: none;
   font-size: 1.125rem;
   border-radius: 0.625rem;
   padding: 0.625rem 0rem 0.625rem 0.625rem;
@@ -193,6 +200,10 @@ body .index main .container_categorias .categoria_productos a h3 {
 body .index main .container_categorias .categoria_mayorista {
   display: flex;
   flex-direction: row;
+  flex-wrap: none;
+  justify-content: none;
+  align-items: none;
+  gap: none;
   font-size: 1.125rem;
   border-radius: 0.625rem;
   padding: 0.625rem 0rem 0.625rem 0.625rem;
@@ -203,6 +214,8 @@ body .index main .container_categorias .categoria_mayorista {
 body .index main .container_categorias .categoria_mayorista a {
   display: flex;
   flex-direction: row;
+  flex-wrap: none;
+  justify-content: none;
   align-items: center;
   gap: 0.625rem;
   font-family: "Roboto", sans-serif;
@@ -215,6 +228,10 @@ body .index main .container_categorias .categoria_mayorista a h3 {
 body .index main .container_categorias .categoria_ofertas {
   display: flex;
   flex-direction: row;
+  flex-wrap: none;
+  justify-content: none;
+  align-items: none;
+  gap: none;
   font-size: 1.125rem;
   border-radius: 0.625rem;
   padding: 0.625rem 0rem 0.625rem 0.625rem;
@@ -225,6 +242,8 @@ body .index main .container_categorias .categoria_ofertas {
 body .index main .container_categorias .categoria_ofertas a {
   display: flex;
   flex-direction: row;
+  flex-wrap: none;
+  justify-content: none;
   align-items: center;
   gap: 0.625rem;
   font-family: "Roboto", sans-serif;
@@ -245,6 +264,10 @@ body .index main .container_productos .producto_apple {
   font-family: "Roboto", sans-serif;
   display: flex;
   flex-direction: column;
+  flex-wrap: none;
+  justify-content: none;
+  align-items: none;
+  gap: none;
   transition: all 0.3s;
   margin-left: 1.25rem;
 }
@@ -386,7 +409,9 @@ body .productos main .titulo_productos {
 body .productos main .container_marcas {
   display: flex;
   flex-direction: row;
+  flex-wrap: none;
   justify-content: center;
+  align-items: none;
   gap: 0.9375rem;
   margin: 1.875rem 0rem;
 }
@@ -412,55 +437,31 @@ body .productos main .container_marcas .gift img {
   border-radius: 50%;
   border: 0.0625rem solid #000;
 }
-body .productos main .container_productos_apple {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1.875rem;
-  margin: 2.8125rem 0.625rem 1.5625rem 0rem;
-}
-body .productos main .container_productos_apple div {
-  width: 15rem;
-}
-body .productos main .container_productos_nikon {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1.875rem;
-  margin: 2.8125rem 0.625rem 1.5625rem 0rem;
-}
-body .productos main .container_productos_nikon div {
-  width: 15rem;
-}
-body .productos main .container_productos_canon {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1.875rem;
-  margin: 2.8125rem 0.625rem 1.5625rem 0rem;
-}
-body .productos main .container_productos_canon div {
-  width: 15rem;
-}
+body .productos main .container_productos_apple,
+body .productos main .container_productos_nikon,
+body .productos main .container_productos_canon,
 body .productos main .container_productos_sony {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: none;
   gap: 1.875rem;
   margin: 2.8125rem 0.625rem 1.5625rem 0rem;
 }
+body .productos main .container_productos_apple div,
+body .productos main .container_productos_nikon div,
+body .productos main .container_productos_canon div,
 body .productos main .container_productos_sony div {
   width: 15rem;
 }
 body .productos main .subtitulo_producto {
   display: flex;
   flex-direction: row;
+  flex-wrap: none;
   justify-content: space-between;
   align-items: center;
+  gap: none;
   color: #fff;
   text-align: center;
   font-family: "Roboto", sans-serif;
@@ -487,6 +488,7 @@ body .galeria main .container_fotos_galeria {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: none;
   gap: 1.625rem;
   margin-bottom: 3.125rem;
 }
@@ -526,7 +528,9 @@ body .main_contacto .titulo_contacto {
 body .main_contacto .redes_contacto {
   display: flex;
   flex-direction: row;
+  flex-wrap: none;
   justify-content: center;
+  align-items: none;
   gap: 1.25rem;
   margin: 1.875rem 0rem 2.5rem 0rem;
 }
@@ -539,15 +543,19 @@ body .main_contacto .container_formulario {
 body .main_contacto .container_formulario .formulario_contacto {
   display: flex;
   flex-direction: column;
+  flex-wrap: none;
   justify-content: center;
-  margin: 0rem 1.25rem 0rem 1.25rem;
-  gap: 1.25rem;
-  transition: all 0.3s;
   align-items: center;
+  gap: 1.25rem;
+  margin: 0rem 1.25rem 0rem 1.25rem;
+  transition: all 0.3s;
 }
 body .main_contacto .container_formulario .formulario_contacto .nombre_apellido_email {
   display: flex;
   flex-direction: column;
+  flex-wrap: none;
+  justify-content: none;
+  align-items: none;
   gap: 1.3125rem;
   transition: all 0.3s;
 }
@@ -576,8 +584,10 @@ body .main_contacto .mail_ubicacion .email {
   color: #fff;
   display: flex;
   flex-direction: column;
-  gap: 0.3125rem;
+  flex-wrap: none;
   justify-content: center;
+  align-items: none;
+  gap: 0.3125rem;
   text-align: center;
 }
 body .main_contacto .mail_ubicacion .email p {
@@ -590,8 +600,10 @@ body .main_contacto .mail_ubicacion .ubicacion {
   color: #fff;
   display: flex;
   flex-direction: column;
-  gap: 0.3125rem;
+  flex-wrap: none;
   justify-content: center;
+  align-items: none;
+  gap: 0.3125rem;
   text-align: center;
 }
 body .main_contacto .mail_ubicacion .ubicacion p {
@@ -615,6 +627,12 @@ body .nosotros footer .container_footer,
 body .contacto footer .container_footer {
   display: flex;
   flex-direction: row;
+  flex-wrap: none;
+  justify-content: space-between;
+  align-items: center;
+  gap: none;
+  display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   transition: all 0.3s;
@@ -626,7 +644,10 @@ body .nosotros footer .container_footer .navbar_footer .ul_footer,
 body .contacto footer .container_footer .navbar_footer .ul_footer {
   display: flex;
   flex-direction: column;
-  gap: 0.3125rem;
+  flex-wrap: none;
+  justify-content: none;
+  align-items: none;
+  gap: 0.1325rem;
   padding-left: 0.625rem;
 }
 body .index footer .container_footer .navbar_footer .ul_footer li,
@@ -652,9 +673,11 @@ body .nosotros footer .container_footer .redes_subscripcion,
 body .contacto footer .container_footer .redes_subscripcion {
   display: flex;
   flex-direction: column;
+  flex-wrap: none;
+  justify-content: none;
   align-items: center;
-  margin-right: 1.25rem;
   gap: 0.625rem;
+  margin-right: 1.25rem;
 }
 body .index footer .container_footer .redes_subscripcion .redes_footer,
 body .productos footer .container_footer .redes_subscripcion .redes_footer,
@@ -664,6 +687,10 @@ body .contacto footer .container_footer .redes_subscripcion .redes_footer {
   margin: 0.625rem 0rem;
   display: flex;
   flex-direction: row;
+  flex-wrap: none;
+  justify-content: none;
+  align-items: none;
+  gap: none;
 }
 body .index footer .container_footer .redes_subscripcion .redes_footer a img,
 body .productos footer .container_footer .redes_subscripcion .redes_footer a img,
@@ -679,6 +706,10 @@ body .nosotros footer .container_footer .redes_subscripcion .suscripcion,
 body .contacto footer .container_footer .redes_subscripcion .suscripcion {
   display: flex;
   flex-direction: column;
+  flex-wrap: none;
+  justify-content: none;
+  align-items: none;
+  gap: none;
   border: 0.0625rem solid #fff;
   border-radius: 0.625rem;
   max-width: 9.375rem;
