@@ -44,6 +44,11 @@ body{
         .textarea::placeholder{
           padding: .3125rem .3125rem;
         }
+        .boton_formulario:hover{
+          box-shadow: 0rem 0rem .625rem $color-shadow1;
+          transform: scale(1.1);
+          transition: all 0.5s;
+        }
       }
     }
     .mail_ubicacion{

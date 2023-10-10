@@ -26,6 +26,10 @@ body{
             }
           }
         }
+        .categoria_productos:hover{
+          transform: scale(1.1);
+          transition: 0.5s;
+        }
         .categoria_mayorista{
           @include flex (row, none, none, none, none);
           font-size: 1.125rem;
@@ -44,6 +48,10 @@ body{
             }
           }
         }
+        .categoria_mayorista:hover{
+          transform: scale(1.1);
+          transition: 0.5s;
+        }
         .categoria_ofertas{
           @include flex (row, none, none, none, none);
           font-size: 1.125rem;
@@ -61,6 +69,10 @@ body{
               margin-bottom: 0rem;
             }
           }
+        }
+        .categoria_ofertas:hover{
+          transform: scale(1.1);
+          transition: 0.5s;
         }
       }
       .container_productos{
@@ -93,18 +105,23 @@ body{
           }
           .boton_producto{
             padding: .625rem 0rem;
-            border-radius: .625rem;
             padding: .625rem .625rem;
             border: .0625rem solid $color-bordes;
+            border-radius: .625rem;
             width: 5.625rem;
             text-align: center;
             transition: all 0.3s;
+            margin-top: .625rem;
             a{
               color: $color-texto;
               font-family: $font-primaria;
               text-decoration: none;
               transition: all 0.3s;
             }
+          }
+          .boton_producto:hover{
+            box-shadow: 0rem 0rem .625rem $color-shadow1;
+            transform: scale(1.1);
           }
         }
       }
@@ -147,6 +164,10 @@ body{
               font-family: $font-primaria;
               text-decoration: none;
             }
+            a:hover{
+              box-shadow: 0rem 0rem .625rem $color-shadow1;
+              transform: scale(1.5);
+            }
           }
         }
         .canon{
@@ -175,6 +196,10 @@ body{
               font-family: $font-primaria;
               text-decoration: none;
             }
+            a:hover{
+              box-shadow: 0rem 0rem .625rem $color-shadow1;
+              transform: scale(1.5);
+            }
           }
         }
         .sony{
@@ -201,6 +226,10 @@ body{
               top: 2.5rem;
               font-family: $font-primaria;
               text-decoration: none;
+            }
+            a:hover{
+              box-shadow: 0rem 0rem .625rem $color-shadow1;
+              transform: scale(1.5);
             }
           }
         }

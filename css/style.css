@@ -1,3 +1,4 @@
+@import url(https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css);
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100&display=swap");
 * {
   margin: 0;
@@ -197,6 +198,10 @@ body .index main .container_categorias .categoria_productos a h3 {
   color: #fff;
   margin-bottom: 0rem;
 }
+body .index main .container_categorias .categoria_productos:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
 body .index main .container_categorias .categoria_mayorista {
   display: flex;
   flex-direction: row;
@@ -225,6 +230,10 @@ body .index main .container_categorias .categoria_mayorista a h3 {
   color: #fff;
   margin-bottom: 0rem;
 }
+body .index main .container_categorias .categoria_mayorista:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
 body .index main .container_categorias .categoria_ofertas {
   display: flex;
   flex-direction: row;
@@ -252,6 +261,10 @@ body .index main .container_categorias .categoria_ofertas a {
 body .index main .container_categorias .categoria_ofertas a h3 {
   color: #fff;
   margin-bottom: 0rem;
+}
+body .index main .container_categorias .categoria_ofertas:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
 }
 body .index main .container_productos {
   display: grid;
@@ -288,18 +301,23 @@ body .index main .container_productos .producto_apple img {
 }
 body .index main .container_productos .producto_apple .boton_producto {
   padding: 0.625rem 0rem;
-  border-radius: 0.625rem;
   padding: 0.625rem 0.625rem;
   border: 0.0625rem solid #fff;
+  border-radius: 0.625rem;
   width: 5.625rem;
   text-align: center;
   transition: all 0.3s;
+  margin-top: 0.625rem;
 }
 body .index main .container_productos .producto_apple .boton_producto a {
   color: #fff;
   font-family: "Roboto", sans-serif;
   text-decoration: none;
   transition: all 0.3s;
+}
+body .index main .container_productos .producto_apple .boton_producto:hover {
+  box-shadow: 0rem 0rem 0.625rem #fff;
+  transform: scale(1.1);
 }
 body .index main .container_fotografia {
   width: 100%;
@@ -343,6 +361,10 @@ body .index main .container_fotografia .nikon .fondo_nikon a {
   font-family: "Roboto", sans-serif;
   text-decoration: none;
 }
+body .index main .container_fotografia .nikon .fondo_nikon a:hover {
+  box-shadow: 0rem 0rem 0.625rem #fff;
+  transform: scale(1.5);
+}
 body .index main .container_fotografia .canon {
   width: 100%;
   height: 6.25rem;
@@ -371,6 +393,10 @@ body .index main .container_fotografia .canon .fondo_canon a {
   font-family: "Roboto", sans-serif;
   text-decoration: none;
 }
+body .index main .container_fotografia .canon .fondo_canon a:hover {
+  box-shadow: 0rem 0rem 0.625rem #fff;
+  transform: scale(1.5);
+}
 body .index main .container_fotografia .sony {
   width: 100%;
   height: 6.25rem;
@@ -397,6 +423,10 @@ body .index main .container_fotografia .sony .fondo_sony a {
   top: 2.5rem;
   font-family: "Roboto", sans-serif;
   text-decoration: none;
+}
+body .index main .container_fotografia .sony .fondo_sony a:hover {
+  box-shadow: 0rem 0rem 0.625rem #fff;
+  transform: scale(1.5);
 }
 
 body .productos main .titulo_productos {
@@ -426,6 +456,11 @@ body .productos main .container_marcas .marcas img {
   border-radius: 50%;
   border: 0.0625rem solid #000;
 }
+body .productos main .container_marcas .marcas:hover {
+  box-shadow: 0rem 0rem 0.625rem #fff;
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
 body .productos main .container_marcas .gift {
   border-radius: 50%;
   border: transparent;
@@ -436,6 +471,11 @@ body .productos main .container_marcas .gift img {
   width: 3.75rem;
   border-radius: 50%;
   border: 0.0625rem solid #000;
+}
+body .productos main .container_marcas .gift:hover {
+  box-shadow: 0rem 0rem 0.625rem #fff;
+  transform: scale(1.1);
+  transition: all 0.5s;
 }
 body .productos main .container_productos_apple,
 body .productos main .container_productos_nikon,
@@ -454,6 +494,14 @@ body .productos main .container_productos_nikon div,
 body .productos main .container_productos_canon div,
 body .productos main .container_productos_sony div {
   width: 15rem;
+}
+body .productos main .container_productos_apple div a:hover,
+body .productos main .container_productos_nikon div a:hover,
+body .productos main .container_productos_canon div a:hover,
+body .productos main .container_productos_sony div a:hover {
+  box-shadow: 0rem 0rem 0.625rem #fff;
+  transform: scale(1.1);
+  transition: all 0.5s;
 }
 body .productos main .subtitulo_producto {
   display: flex;
@@ -576,6 +624,11 @@ body .main_contacto .container_formulario .formulario_contacto .textarea {
 }
 body .main_contacto .container_formulario .formulario_contacto .textarea::placeholder {
   padding: 0.3125rem 0.3125rem;
+}
+body .main_contacto .container_formulario .formulario_contacto .boton_formulario:hover {
+  box-shadow: 0rem 0rem 0.625rem #fff;
+  transform: scale(1.1);
+  transition: all 0.5s;
 }
 body .main_contacto .mail_ubicacion {
   margin-bottom: 2.5rem;

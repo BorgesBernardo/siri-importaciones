@@ -22,6 +22,11 @@ body{
             border: .0625rem solid $color-bordes2;
           }
         }
+        .marcas:hover{
+          box-shadow: 0rem 0rem .625rem $color-shadow1;
+          transform: scale(1.1);
+          transition: all 0.5s;
+        }
         .gift{
           border-radius: 50%;
           border: transparent;
@@ -33,6 +38,11 @@ body{
             border: .0625rem solid $color-bordes2
           }
         }
+        .gift:hover{
+          box-shadow: 0rem 0rem .625rem $color-shadow1;
+          transform: scale(1.1);
+          transition: all 0.5s;
+        }
       }
       .container_productos_apple,
       .container_productos_nikon,
@@ -42,6 +52,11 @@ body{
         margin: 2.8125rem .625rem 1.5625rem 0rem;
         div{
           width: 15rem;
+          a:hover{
+            box-shadow: 0rem 0rem .625rem $color-shadow1;
+            transform: scale(1.1);
+            transition: all 0.5s;
+          }
         }
       }
       .subtitulo_producto{
