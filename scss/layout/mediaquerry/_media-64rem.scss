@@ -4,7 +4,8 @@
     .contacto,
     .nosotros,
     .productos,
-    .galeria{
+    .galeria,
+    .carrito{
       header{
         .container_header{
           nav{
@@ -18,8 +19,13 @@
               background: none;
               transition: none;
               text-align: right;
-              margin-right: 1.25rem;
+              margin-right: 3.25rem;
               margin-bottom: 0rem;
+              display: flex;
+              flex-direction: row;
+              justify-content: end;
+              align-items: center;
+              gap: 5px;
               li{
                 display: inline-block;
                 line-height: 6.25rem;

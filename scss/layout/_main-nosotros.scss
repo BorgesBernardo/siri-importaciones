@@ -1,5 +1,13 @@
 body{
   .nosotros{
+    header{
+      .contenedor_carrito{
+        margin-left: 15px;
+        .carrito{
+          bottom: 35px;
+        }
+      }
+    }
     .main_nosotros{
       section{
         .titulo_nosotros{

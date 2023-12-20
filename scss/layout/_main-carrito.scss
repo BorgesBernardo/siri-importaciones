@@ -1,0 +1,112 @@
+body{
+  main{
+    .contenedor_titulo{
+      h1{
+        color: white;
+        text-align: center;
+        margin: 30px 0px;
+      }
+    }
+    .texto_carrito_vacio{
+      color: white;
+      margin: 30px ;
+      text-align: center;
+      margin: 200px 0px 295px 0px;
+    }
+    .contenedor_lista{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 40px;
+      .articulo_carrito{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+        color: white;
+        background-color: grey;
+        padding: 20px 0px;
+        border-radius: 36px;
+        width: 250px;
+        .foto_producto{
+          width: 180px;
+          border-radius: 20px;
+        }
+        .contenedor_descripcion{
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          gap: 25px;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          .nombre,
+          .cantidad,
+          .precio,
+          .subtotal{
+            width: 80px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            h3{
+              font-size: 20px;
+            }
+            .subtitulo_carrito{
+              text-align: center;
+            }
+          }
+        }
+      }
+    }
+    .contenedor_compra{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 50px;
+      color: white;
+      margin-bottom: 50px;
+      button{
+        padding: 20px 30px;
+        color: black;
+        background-color: white;
+        border: 0;
+        border-radius: 16px;
+        font-size: 20px;
+      }
+      .comprar{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        border-style: solid;
+        border-color: white;
+        border-radius: 20px;
+        .total_de_compra{
+          font-size: 20px;
+          padding: 0px 15px;
+          margin-bottom: 0px;
+          text-align: start;
+        }
+        .boton_comprar{
+          
+        }
+      }
+    }
+    .mensaje_compra{
+      color: white;
+      margin: 30px ;
+    }
+  
+    .ocultar{
+      display: none;
+    }
+  }
+  }

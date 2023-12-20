@@ -19,16 +19,6 @@
   animation: transitionIn 0.75s;
 }
 
-@keyframes transitionIn {
-  from {
-    opacity: 0;
-    transform: rotateX(-10deg);
-  }
-  to {
-    opacity: 1;
-    transform: rotateX(0deg);
-  }
-}
 /*
   font-family: 'Poppins', sans-serif;
   font-family: 'Roboto', sans-serif;
@@ -67,11 +57,18 @@ body {
   grid-template-rows: 6.25rem 1fr 11.5rem;
 }
 
+.carrito {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 6.25rem 1fr 11.5rem;
+}
+
 body .index header .container_header,
 body .productos header .container_header,
 body .galeria header .container_header,
 body .nosotros header .container_header,
-body .contacto header .container_header {
+body .contacto header .container_header,
+body .carrito header .container_header {
   width: 100%;
   height: 6.25rem;
   background-color: #000;
@@ -83,7 +80,8 @@ body .index header .container_header nav,
 body .productos header .container_header nav,
 body .galeria header .container_header nav,
 body .nosotros header .container_header nav,
-body .contacto header .container_header nav {
+body .contacto header .container_header nav,
+body .carrito header .container_header nav {
   height: 6.25rem;
   width: 100%;
   display: flex;
@@ -97,7 +95,8 @@ body .index header .container_header nav .logo_siri img,
 body .productos header .container_header nav .logo_siri img,
 body .galeria header .container_header nav .logo_siri img,
 body .nosotros header .container_header nav .logo_siri img,
-body .contacto header .container_header nav .logo_siri img {
+body .contacto header .container_header nav .logo_siri img,
+body .carrito header .container_header nav .logo_siri img {
   width: 7rem;
   margin-left: 25px;
 }
@@ -105,7 +104,8 @@ body .index header .container_header nav .bar-btn,
 body .productos header .container_header nav .bar-btn,
 body .galeria header .container_header nav .bar-btn,
 body .nosotros header .container_header nav .bar-btn,
-body .contacto header .container_header nav .bar-btn {
+body .contacto header .container_header nav .bar-btn,
+body .carrito header .container_header nav .bar-btn {
   font-size: 1.5625rem;
   color: #fff;
   margin-right: 1.8rem;
@@ -115,14 +115,16 @@ body .index header .container_header nav .bar-btn i,
 body .productos header .container_header nav .bar-btn i,
 body .galeria header .container_header nav .bar-btn i,
 body .nosotros header .container_header nav .bar-btn i,
-body .contacto header .container_header nav .bar-btn i {
+body .contacto header .container_header nav .bar-btn i,
+body .carrito header .container_header nav .bar-btn i {
   color: #fff;
 }
 body .index header .container_header nav .nav-menu,
 body .productos header .container_header nav .nav-menu,
 body .galeria header .container_header nav .nav-menu,
 body .nosotros header .container_header nav .nav-menu,
-body .contacto header .container_header nav .nav-menu {
+body .contacto header .container_header nav .nav-menu,
+body .carrito header .container_header nav .nav-menu {
   position: fixed;
   width: 100%;
   height: 0vh;
@@ -135,7 +137,8 @@ body .index header .container_header nav .nav-menu li,
 body .productos header .container_header nav .nav-menu li,
 body .galeria header .container_header nav .nav-menu li,
 body .nosotros header .container_header nav .nav-menu li,
-body .contacto header .container_header nav .nav-menu li {
+body .contacto header .container_header nav .nav-menu li,
+body .carrito header .container_header nav .nav-menu li {
   list-style: none;
   display: none;
   line-height: 1.875rem;
@@ -145,7 +148,8 @@ body .index header .container_header nav .nav-menu li a,
 body .productos header .container_header nav .nav-menu li a,
 body .galeria header .container_header nav .nav-menu li a,
 body .nosotros header .container_header nav .nav-menu li a,
-body .contacto header .container_header nav .nav-menu li a {
+body .contacto header .container_header nav .nav-menu li a,
+body .carrito header .container_header nav .nav-menu li a {
   text-decoration: none;
   color: #000;
   font-size: 1rem;
@@ -153,6 +157,64 @@ body .contacto header .container_header nav .nav-menu li a {
   font-weight: 600;
   font-family: "Poppins", sans-serif;
   text-align: center;
+}
+body .index header .container_header nav .nav-menu .contenedor_carrito,
+body .productos header .container_header nav .nav-menu .contenedor_carrito,
+body .galeria header .container_header nav .nav-menu .contenedor_carrito,
+body .nosotros header .container_header nav .nav-menu .contenedor_carrito,
+body .contacto header .container_header nav .nav-menu .contenedor_carrito,
+body .carrito header .container_header nav .nav-menu .contenedor_carrito {
+  margin-right: 10px;
+}
+body .index header .container_header nav .nav-menu .contenedor_carrito .carrito-blanco,
+body .productos header .container_header nav .nav-menu .contenedor_carrito .carrito-blanco,
+body .galeria header .container_header nav .nav-menu .contenedor_carrito .carrito-blanco,
+body .nosotros header .container_header nav .nav-menu .contenedor_carrito .carrito-blanco,
+body .contacto header .container_header nav .nav-menu .contenedor_carrito .carrito-blanco,
+body .carrito header .container_header nav .nav-menu .contenedor_carrito .carrito-blanco {
+  display: none;
+  width: 40px;
+  position: absolute;
+  right: -14px;
+}
+body .index header .container_header nav .nav-menu .contenedor_carrito p,
+body .productos header .container_header nav .nav-menu .contenedor_carrito p,
+body .galeria header .container_header nav .nav-menu .contenedor_carrito p,
+body .nosotros header .container_header nav .nav-menu .contenedor_carrito p,
+body .contacto header .container_header nav .nav-menu .contenedor_carrito p,
+body .carrito header .container_header nav .nav-menu .contenedor_carrito p {
+  color: black;
+  position: relative;
+  font-size: 20px;
+  background-color: white;
+  padding: 0px 5px;
+  left: 40px;
+  top: 20px;
+  border-radius: 10px;
+}
+body .index header .container_header nav .nav-menu .contenedor_carrito .carrito-negro,
+body .productos header .container_header nav .nav-menu .contenedor_carrito .carrito-negro,
+body .galeria header .container_header nav .nav-menu .contenedor_carrito .carrito-negro,
+body .nosotros header .container_header nav .nav-menu .contenedor_carrito .carrito-negro,
+body .contacto header .container_header nav .nav-menu .contenedor_carrito .carrito-negro,
+body .carrito header .container_header nav .nav-menu .contenedor_carrito .carrito-negro {
+  width: 40px;
+}
+body .index header .container_header nav .nav-menu .contenedor_carrito p,
+body .productos header .container_header nav .nav-menu .contenedor_carrito p,
+body .galeria header .container_header nav .nav-menu .contenedor_carrito p,
+body .nosotros header .container_header nav .nav-menu .contenedor_carrito p,
+body .contacto header .container_header nav .nav-menu .contenedor_carrito p,
+body .carrito header .container_header nav .nav-menu .contenedor_carrito p {
+  color: white;
+  width: 30px;
+  position: relative;
+  display: inline-block;
+  font-size: 20px;
+  background-color: black;
+  padding: 0px 5px;
+  border-radius: 10px;
+  left: -14px;
 }
 
 nav-menu li a.active, .nav-menu li a:hover {
@@ -173,6 +235,12 @@ nav-menu li a.active, .nav-menu li a:hover {
   display: block;
 }
 
+body .index header .contenedor_carrito {
+  margin-left: 15px;
+}
+body .index header .contenedor_carrito .carrito {
+  bottom: 35px;
+}
 body .index main .container_categorias {
   font-family: "Roboto", sans-serif;
   display: flex;
@@ -440,48 +508,29 @@ body .productos main .titulo_productos {
 body .productos main .container_marcas {
   display: flex;
   flex-direction: row;
-  flex-wrap: none;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: none;
-  gap: 0.9375rem;
+  align-items: center;
+  gap: 30px;
   margin: 1.875rem 0rem;
 }
-body .productos main .container_marcas .marcas {
+body .productos main .container_marcas .categoria-boton {
   border-radius: 50%;
   border: transparent;
   background-color: transparent;
   box-shadow: 0rem 0rem 0.625rem #fff;
 }
-body .productos main .container_marcas .marcas img {
+body .productos main .container_marcas .categoria-boton img {
   width: 3.75rem;
   border-radius: 50%;
   border: 0.0625rem solid #000;
 }
-body .productos main .container_marcas .marcas:hover {
+body .productos main .container_marcas .categoria-boton:hover {
   box-shadow: 0rem 0rem 0.625rem #fff;
   transform: scale(1.1);
   transition: all 0.5s;
 }
-body .productos main .container_marcas .gift {
-  border-radius: 50%;
-  border: transparent;
-  background-color: transparent;
-  box-shadow: 0rem 0rem 0.625rem #fff;
-}
-body .productos main .container_marcas .gift img {
-  width: 3.75rem;
-  border-radius: 50%;
-  border: 0.0625rem solid #000;
-}
-body .productos main .container_marcas .gift:hover {
-  box-shadow: 0rem 0rem 0.625rem #fff;
-  transform: scale(1.1);
-  transition: all 0.5s;
-}
-body .productos main .container_productos_apple,
-body .productos main .container_productos_nikon,
-body .productos main .container_productos_canon,
-body .productos main .container_productos_sony {
+body .productos main .contenedor_productos {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -490,16 +539,38 @@ body .productos main .container_productos_sony {
   gap: 1.875rem;
   margin: 2.8125rem 0.625rem 1.5625rem 0rem;
 }
-body .productos main .container_productos_apple div,
-body .productos main .container_productos_nikon div,
-body .productos main .container_productos_canon div,
-body .productos main .container_productos_sony div {
+body .productos main .contenedor_productos .producto {
+  width: 15rem;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+body .productos main .contenedor_productos .producto .imagen_producto {
+  border-radius: 5px;
+}
+body .productos main .contenedor_productos .producto .producto_body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+body .productos main .contenedor_productos .producto .producto_body button {
+  border: 1px solid white;
+  border-radius: 5px;
+  padding: 6px;
+  color: white;
+  background-color: transparent;
+}
+body .productos main .contenedor_productos .producto .producto_body button:hover {
+  box-shadow: 0rem 0rem 0.625rem #fff;
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
+body .productos main .contenedor_productos div {
   width: 15rem;
 }
-body .productos main .container_productos_apple div a:hover,
-body .productos main .container_productos_nikon div a:hover,
-body .productos main .container_productos_canon div a:hover,
-body .productos main .container_productos_sony div a:hover {
+body .productos main .contenedor_productos div a:hover {
   box-shadow: 0rem 0rem 0.625rem #fff;
   transform: scale(1.1);
   transition: all 0.5s;
@@ -526,6 +597,12 @@ body .productos main .subtitulo_producto a img {
   margin-right: 0.625rem;
 }
 
+body .galeria header .contenedor_carrito {
+  margin-left: 15px;
+}
+body .galeria header .contenedor_carrito .carrito {
+  bottom: 35px;
+}
 body .galeria main .titulo_galeria {
   text-align: center;
   margin: 1.875rem 0rem;
@@ -546,6 +623,12 @@ body .galeria main .container_fotos_galeria img {
   width: 17rem;
 }
 
+body .nosotros header .contenedor_carrito {
+  margin-left: 15px;
+}
+body .nosotros header .contenedor_carrito .carrito {
+  bottom: 35px;
+}
 body .nosotros .main_nosotros section .titulo_nosotros {
   text-align: center;
   margin: 1.625rem 0rem;
@@ -567,6 +650,18 @@ body .nosotros .main_nosotros section .texto_nosotros span {
   font-weight: bold;
 }
 
+body header .contenedor_carrito {
+  margin-left: 15px;
+}
+body header .contenedor_carrito .carrito {
+  bottom: 35px;
+}
+body .main_contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 body .main_contacto .titulo_contacto {
   text-align: center;
   margin-top: 1.875rem;
@@ -666,19 +761,135 @@ body .main_contacto .mail_ubicacion .ubicacion p {
 body .main_contacto .mail_ubicacion .ubicacion a img {
   width: 2.5rem;
 }
+body .main_contacto .mapa {
+  width: 800px;
+  height: 300px;
+  border-radius: 10px;
+}
+
+body main .contenedor_titulo h1 {
+  color: white;
+  text-align: center;
+  margin: 30px 0px;
+}
+body main .texto_carrito_vacio {
+  color: white;
+  margin: 30px;
+  text-align: center;
+  margin: 200px 0px 295px 0px;
+}
+body main .contenedor_lista {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+body main .contenedor_lista .articulo_carrito {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  color: white;
+  background-color: grey;
+  padding: 20px 0px;
+  border-radius: 36px;
+  width: 250px;
+}
+body main .contenedor_lista .articulo_carrito .foto_producto {
+  width: 180px;
+  border-radius: 20px;
+}
+body main .contenedor_lista .articulo_carrito .contenedor_descripcion {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+body main .contenedor_lista .articulo_carrito .contenedor_descripcion .nombre,
+body main .contenedor_lista .articulo_carrito .contenedor_descripcion .cantidad,
+body main .contenedor_lista .articulo_carrito .contenedor_descripcion .precio,
+body main .contenedor_lista .articulo_carrito .contenedor_descripcion .subtotal {
+  width: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+body main .contenedor_lista .articulo_carrito .contenedor_descripcion .nombre h3,
+body main .contenedor_lista .articulo_carrito .contenedor_descripcion .cantidad h3,
+body main .contenedor_lista .articulo_carrito .contenedor_descripcion .precio h3,
+body main .contenedor_lista .articulo_carrito .contenedor_descripcion .subtotal h3 {
+  font-size: 20px;
+}
+body main .contenedor_lista .articulo_carrito .contenedor_descripcion .nombre .subtitulo_carrito,
+body main .contenedor_lista .articulo_carrito .contenedor_descripcion .cantidad .subtitulo_carrito,
+body main .contenedor_lista .articulo_carrito .contenedor_descripcion .precio .subtitulo_carrito,
+body main .contenedor_lista .articulo_carrito .contenedor_descripcion .subtotal .subtitulo_carrito {
+  text-align: center;
+}
+body main .contenedor_compra {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  color: white;
+  margin-bottom: 50px;
+}
+body main .contenedor_compra button {
+  padding: 20px 30px;
+  color: black;
+  background-color: white;
+  border: 0;
+  border-radius: 16px;
+  font-size: 20px;
+}
+body main .contenedor_compra .comprar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  border-style: solid;
+  border-color: white;
+  border-radius: 20px;
+}
+body main .contenedor_compra .comprar .total_de_compra {
+  font-size: 20px;
+  padding: 0px 15px;
+  margin-bottom: 0px;
+  text-align: start;
+}
+body main .mensaje_compra {
+  color: white;
+  margin: 30px;
+}
+body main .ocultar {
+  display: none;
+}
 
 body .index footer,
 body .productos footer,
 body .galeria footer,
 body .nosotros footer,
-body .contacto footer {
+body .contacto footer,
+body .carrito footer {
   background-color: #000;
 }
 body .index footer .container_footer,
 body .productos footer .container_footer,
 body .galeria footer .container_footer,
 body .nosotros footer .container_footer,
-body .contacto footer .container_footer {
+body .contacto footer .container_footer,
+body .carrito footer .container_footer {
   display: flex;
   flex-direction: row;
   flex-wrap: none;
@@ -695,7 +906,8 @@ body .index footer .container_footer .navbar_footer .ul_footer,
 body .productos footer .container_footer .navbar_footer .ul_footer,
 body .galeria footer .container_footer .navbar_footer .ul_footer,
 body .nosotros footer .container_footer .navbar_footer .ul_footer,
-body .contacto footer .container_footer .navbar_footer .ul_footer {
+body .contacto footer .container_footer .navbar_footer .ul_footer,
+body .carrito footer .container_footer .navbar_footer .ul_footer {
   display: flex;
   flex-direction: column;
   flex-wrap: none;
@@ -708,14 +920,16 @@ body .index footer .container_footer .navbar_footer .ul_footer li,
 body .productos footer .container_footer .navbar_footer .ul_footer li,
 body .galeria footer .container_footer .navbar_footer .ul_footer li,
 body .nosotros footer .container_footer .navbar_footer .ul_footer li,
-body .contacto footer .container_footer .navbar_footer .ul_footer li {
+body .contacto footer .container_footer .navbar_footer .ul_footer li,
+body .carrito footer .container_footer .navbar_footer .ul_footer li {
   list-style: none;
 }
 body .index footer .container_footer .navbar_footer .ul_footer li a,
 body .productos footer .container_footer .navbar_footer .ul_footer li a,
 body .galeria footer .container_footer .navbar_footer .ul_footer li a,
 body .nosotros footer .container_footer .navbar_footer .ul_footer li a,
-body .contacto footer .container_footer .navbar_footer .ul_footer li a {
+body .contacto footer .container_footer .navbar_footer .ul_footer li a,
+body .carrito footer .container_footer .navbar_footer .ul_footer li a {
   color: #fff;
   font-family: "Roboto", sans-serif;
   text-decoration: none;
@@ -724,7 +938,8 @@ body .index footer .container_footer .redes_subscripcion,
 body .productos footer .container_footer .redes_subscripcion,
 body .galeria footer .container_footer .redes_subscripcion,
 body .nosotros footer .container_footer .redes_subscripcion,
-body .contacto footer .container_footer .redes_subscripcion {
+body .contacto footer .container_footer .redes_subscripcion,
+body .carrito footer .container_footer .redes_subscripcion {
   display: flex;
   flex-direction: column;
   flex-wrap: none;
@@ -737,7 +952,8 @@ body .index footer .container_footer .redes_subscripcion .redes_footer,
 body .productos footer .container_footer .redes_subscripcion .redes_footer,
 body .galeria footer .container_footer .redes_subscripcion .redes_footer,
 body .nosotros footer .container_footer .redes_subscripcion .redes_footer,
-body .contacto footer .container_footer .redes_subscripcion .redes_footer {
+body .contacto footer .container_footer .redes_subscripcion .redes_footer,
+body .carrito footer .container_footer .redes_subscripcion .redes_footer {
   margin: 0.625rem 0rem;
   display: flex;
   flex-direction: row;
@@ -750,14 +966,16 @@ body .index footer .container_footer .redes_subscripcion .redes_footer a img,
 body .productos footer .container_footer .redes_subscripcion .redes_footer a img,
 body .galeria footer .container_footer .redes_subscripcion .redes_footer a img,
 body .nosotros footer .container_footer .redes_subscripcion .redes_footer a img,
-body .contacto footer .container_footer .redes_subscripcion .redes_footer a img {
+body .contacto footer .container_footer .redes_subscripcion .redes_footer a img,
+body .carrito footer .container_footer .redes_subscripcion .redes_footer a img {
   width: 2.5rem;
 }
 body .index footer .container_footer .redes_subscripcion .suscripcion,
 body .productos footer .container_footer .redes_subscripcion .suscripcion,
 body .galeria footer .container_footer .redes_subscripcion .suscripcion,
 body .nosotros footer .container_footer .redes_subscripcion .suscripcion,
-body .contacto footer .container_footer .redes_subscripcion .suscripcion {
+body .contacto footer .container_footer .redes_subscripcion .suscripcion,
+body .carrito footer .container_footer .redes_subscripcion .suscripcion {
   display: flex;
   flex-direction: column;
   flex-wrap: none;
@@ -772,7 +990,8 @@ body .index footer .container_footer .redes_subscripcion .suscripcion input,
 body .productos footer .container_footer .redes_subscripcion .suscripcion input,
 body .galeria footer .container_footer .redes_subscripcion .suscripcion input,
 body .nosotros footer .container_footer .redes_subscripcion .suscripcion input,
-body .contacto footer .container_footer .redes_subscripcion .suscripcion input {
+body .contacto footer .container_footer .redes_subscripcion .suscripcion input,
+body .carrito footer .container_footer .redes_subscripcion .suscripcion input {
   padding: 0.3125rem;
   margin: 0.3125rem;
   border: transparent;
@@ -785,14 +1004,16 @@ body .index footer .container_footer .redes_subscripcion .suscripcion input::pla
 body .productos footer .container_footer .redes_subscripcion .suscripcion input::placeholder,
 body .galeria footer .container_footer .redes_subscripcion .suscripcion input::placeholder,
 body .nosotros footer .container_footer .redes_subscripcion .suscripcion input::placeholder,
-body .contacto footer .container_footer .redes_subscripcion .suscripcion input::placeholder {
+body .contacto footer .container_footer .redes_subscripcion .suscripcion input::placeholder,
+body .carrito footer .container_footer .redes_subscripcion .suscripcion input::placeholder {
   color: #fff;
 }
 body .index footer .container_footer .redes_subscripcion .suscripcion button,
 body .productos footer .container_footer .redes_subscripcion .suscripcion button,
 body .galeria footer .container_footer .redes_subscripcion .suscripcion button,
 body .nosotros footer .container_footer .redes_subscripcion .suscripcion button,
-body .contacto footer .container_footer .redes_subscripcion .suscripcion button {
+body .contacto footer .container_footer .redes_subscripcion .suscripcion button,
+body .carrito footer .container_footer .redes_subscripcion .suscripcion button {
   font-family: "Roboto", sans-serif;
   padding: 0.6875rem 3.25rem;
   border: transparent;
@@ -806,44 +1027,25 @@ body .contacto footer .container_footer .redes_subscripcion .suscripcion button 
   body .contacto header .container_header nav .nav-menu .active,
   body .galeria header .container_header nav .nav-menu .active,
   body .nosotros header .container_header nav .nav-menu .active,
-  body .productos header .container_header nav .nav-menu .active {
+  body .productos header .container_header nav .nav-menu .active,
+  body .carrito header .container_header nav .nav-menu .active {
     box-shadow: 0rem 0rem 0.625rem #fff;
     border-radius: 0.3125rem;
-  }
-  body .index main .container_categorias .categoria_productos,
-  body .index main .container_categorias .categoria_mayorista,
-  body .index main .container_categorias .categoria_ofertas,
-  body .contacto main .container_categorias .categoria_productos,
-  body .contacto main .container_categorias .categoria_mayorista,
-  body .contacto main .container_categorias .categoria_ofertas,
-  body .galeria main .container_categorias .categoria_productos,
-  body .galeria main .container_categorias .categoria_mayorista,
-  body .galeria main .container_categorias .categoria_ofertas,
-  body .nosotros main .container_categorias .categoria_productos,
-  body .nosotros main .container_categorias .categoria_mayorista,
-  body .nosotros main .container_categorias .categoria_ofertas,
-  body .productos main .container_categorias .categoria_productos,
-  body .productos main .container_categorias .categoria_mayorista,
-  body .productos main .container_categorias .categoria_ofertas {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: none;
-    justify-content: center;
-    align-items: none;
-    gap: none;
   }
   body .index footer .container_footer,
   body .contacto footer .container_footer,
   body .galeria footer .container_footer,
   body .nosotros footer .container_footer,
-  body .productos footer .container_footer {
+  body .productos footer .container_footer,
+  body .carrito footer .container_footer {
     margin-top: 3rem;
   }
   body .index footer .container_footer .redes_subscripcion,
   body .contacto footer .container_footer .redes_subscripcion,
   body .galeria footer .container_footer .redes_subscripcion,
   body .nosotros footer .container_footer .redes_subscripcion,
-  body .productos footer .container_footer .redes_subscripcion {
+  body .productos footer .container_footer .redes_subscripcion,
+  body .carrito footer .container_footer .redes_subscripcion {
     flex-direction: row;
     gap: 1.25rem;
   }
@@ -851,14 +1053,16 @@ body .contacto footer .container_footer .redes_subscripcion .suscripcion button 
   body .contacto footer .container_footer .redes_subscripcion .redes_footer,
   body .galeria footer .container_footer .redes_subscripcion .redes_footer,
   body .nosotros footer .container_footer .redes_subscripcion .redes_footer,
-  body .productos footer .container_footer .redes_subscripcion .redes_footer {
+  body .productos footer .container_footer .redes_subscripcion .redes_footer,
+  body .carrito footer .container_footer .redes_subscripcion .redes_footer {
     gap: 0.625rem;
   }
   body .index footer .container_footer .redes_subscripcion .suscripcion,
   body .contacto footer .container_footer .redes_subscripcion .suscripcion,
   body .galeria footer .container_footer .redes_subscripcion .suscripcion,
   body .nosotros footer .container_footer .redes_subscripcion .suscripcion,
-  body .productos footer .container_footer .redes_subscripcion .suscripcion {
+  body .productos footer .container_footer .redes_subscripcion .suscripcion,
+  body .carrito footer .container_footer .redes_subscripcion .suscripcion {
     flex-direction: row;
     margin-right: 7.5rem;
     gap: 0.3125rem;
@@ -867,7 +1071,8 @@ body .contacto footer .container_footer .redes_subscripcion .suscripcion button 
   body .contacto footer .container_footer .redes_subscripcion .suscripcion input,
   body .galeria footer .container_footer .redes_subscripcion .suscripcion input,
   body .nosotros footer .container_footer .redes_subscripcion .suscripcion input,
-  body .productos footer .container_footer .redes_subscripcion .suscripcion input {
+  body .productos footer .container_footer .redes_subscripcion .suscripcion input,
+  body .carrito footer .container_footer .redes_subscripcion .suscripcion input {
     padding: 0rem;
     border: transparent;
     background-color: transparent;
@@ -878,7 +1083,8 @@ body .contacto footer .container_footer .redes_subscripcion .suscripcion button 
   body .contacto footer .container_footer .redes_subscripcion .suscripcion button,
   body .galeria footer .container_footer .redes_subscripcion .suscripcion button,
   body .nosotros footer .container_footer .redes_subscripcion .suscripcion button,
-  body .productos footer .container_footer .redes_subscripcion .suscripcion button {
+  body .productos footer .container_footer .redes_subscripcion .suscripcion button,
+  body .carrito footer .container_footer .redes_subscripcion .suscripcion button {
     border-radius: 0.4375rem;
     padding: 0.6875rem 2.1875rem;
   }
@@ -907,28 +1113,36 @@ body .contacto footer .container_footer .redes_subscripcion .suscripcion button 
   body .contacto header .container_header nav .bar-btn,
   body .nosotros header .container_header nav .bar-btn,
   body .productos header .container_header nav .bar-btn,
-  body .galeria header .container_header nav .bar-btn {
+  body .galeria header .container_header nav .bar-btn,
+  body .carrito header .container_header nav .bar-btn {
     display: none;
   }
   body .index header .container_header nav .nav-menu,
   body .contacto header .container_header nav .nav-menu,
   body .nosotros header .container_header nav .nav-menu,
   body .productos header .container_header nav .nav-menu,
-  body .galeria header .container_header nav .nav-menu {
+  body .galeria header .container_header nav .nav-menu,
+  body .carrito header .container_header nav .nav-menu {
     position: relative;
     height: 6.25rem;
     top: 0;
     background: none;
     transition: none;
     text-align: right;
-    margin-right: 1.25rem;
+    margin-right: 3.25rem;
     margin-bottom: 0rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    gap: 5px;
   }
   body .index header .container_header nav .nav-menu li,
   body .contacto header .container_header nav .nav-menu li,
   body .nosotros header .container_header nav .nav-menu li,
   body .productos header .container_header nav .nav-menu li,
-  body .galeria header .container_header nav .nav-menu li {
+  body .galeria header .container_header nav .nav-menu li,
+  body .carrito header .container_header nav .nav-menu li {
     display: inline-block;
     line-height: 6.25rem;
     margin: 0;
@@ -938,7 +1152,8 @@ body .contacto footer .container_footer .redes_subscripcion .suscripcion button 
   body .contacto header .container_header nav .nav-menu li a,
   body .nosotros header .container_header nav .nav-menu li a,
   body .productos header .container_header nav .nav-menu li a,
-  body .galeria header .container_header nav .nav-menu li a {
+  body .galeria header .container_header nav .nav-menu li a,
+  body .carrito header .container_header nav .nav-menu li a {
     font-size: 1.25rem;
     padding: 0rem 0.625rem;
     color: #fff;
@@ -947,7 +1162,8 @@ body .contacto footer .container_footer .redes_subscripcion .suscripcion button 
   body .contacto main .mail_ubicacion .email,
   body .nosotros main .mail_ubicacion .email,
   body .productos main .mail_ubicacion .email,
-  body .galeria main .mail_ubicacion .email {
+  body .galeria main .mail_ubicacion .email,
+  body .carrito main .mail_ubicacion .email {
     flex-direction: row;
     align-items: center;
     margin-bottom: 1.25rem;
@@ -956,14 +1172,16 @@ body .contacto footer .container_footer .redes_subscripcion .suscripcion button 
   body .contacto main .mail_ubicacion .email p,
   body .nosotros main .mail_ubicacion .email p,
   body .productos main .mail_ubicacion .email p,
-  body .galeria main .mail_ubicacion .email p {
+  body .galeria main .mail_ubicacion .email p,
+  body .carrito main .mail_ubicacion .email p {
     margin-bottom: 0rem;
   }
   body .index main .mail_ubicacion .ubicacion,
   body .contacto main .mail_ubicacion .ubicacion,
   body .nosotros main .mail_ubicacion .ubicacion,
   body .productos main .mail_ubicacion .ubicacion,
-  body .galeria main .mail_ubicacion .ubicacion {
+  body .galeria main .mail_ubicacion .ubicacion,
+  body .carrito main .mail_ubicacion .ubicacion {
     flex-direction: row;
     align-items: center;
   }
@@ -971,7 +1189,8 @@ body .contacto footer .container_footer .redes_subscripcion .suscripcion button 
   body .contacto main .mail_ubicacion .ubicacion p,
   body .nosotros main .mail_ubicacion .ubicacion p,
   body .productos main .mail_ubicacion .ubicacion p,
-  body .galeria main .mail_ubicacion .ubicacion p {
+  body .galeria main .mail_ubicacion .ubicacion p,
+  body .carrito main .mail_ubicacion .ubicacion p {
     margin-bottom: 0rem;
   }
 }

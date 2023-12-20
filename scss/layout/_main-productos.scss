@@ -9,9 +9,15 @@ body{
         color: $color-texto;
       }
       .container_marcas{
-        @include flex (row, none, center, none, 0.9375rem);
+        // @include flex (row, none, center, none, 0.9375rem);
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
         margin: 1.875rem 0rem;
-        .marcas{
+        .categoria-boton{
           border-radius: 50%;
           border: transparent;
           background-color: transparent;
@@ -22,34 +28,43 @@ body{
             border: .0625rem solid $color-bordes2;
           }
         }
-        .marcas:hover{
-          box-shadow: 0rem 0rem .625rem $color-shadow1;
-          transform: scale(1.1);
-          transition: all 0.5s;
-        }
-        .gift{
-          border-radius: 50%;
-          border: transparent;
-          background-color: transparent;
-          box-shadow: 0rem 0rem .625rem $color-shadow1;
-          img{
-            width: 3.75rem;
-            border-radius: 50%;
-            border: .0625rem solid $color-bordes2
-          }
-        }
-        .gift:hover{
+        .categoria-boton:hover{
           box-shadow: 0rem 0rem .625rem $color-shadow1;
           transform: scale(1.1);
           transition: all 0.5s;
         }
       }
-      .container_productos_apple,
-      .container_productos_nikon,
-      .container_productos_canon,
-      .container_productos_sony{
+      .contenedor_productos{
         @include flex (row, wrap, center, none, 1.875rem);
         margin: 2.8125rem .625rem 1.5625rem 0rem;
+        .producto{
+          width: 15rem;
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+          .imagen_producto{
+            border-radius: 5px;
+          }
+          .producto_body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            button{
+              border: 1px solid white;
+              border-radius: 5px;
+              padding: 6px;
+              color: white;
+              background-color: transparent;
+            }
+            button:hover{
+              box-shadow: 0rem 0rem .625rem $color-shadow1;
+              transform: scale(1.1);
+              transition: all 0.5s;
+            }
+          }
+        }
         div{
           width: 15rem;
           a:hover{

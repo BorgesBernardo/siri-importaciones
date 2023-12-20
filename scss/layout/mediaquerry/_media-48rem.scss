@@ -4,7 +4,8 @@
     .contacto,
     .galeria,
     .nosotros,
-    .productos{
+    .productos,
+    .carrito{
       header{
         .container_header{
           nav{
@@ -18,13 +19,13 @@
         }
       }
       main{
-        .container_categorias{
-          .categoria_productos,
-          .categoria_mayorista,
-          .categoria_ofertas{
-            @include flex (row, none, center, none, none);
-          }
-        }
+        // .container_categorias{
+        //   .categoria_productos,
+        //   .categoria_mayorista,
+        //   .categoria_ofertas{
+        //     @include flex (row, none, center, none, none);
+        //   }
+        // }
       }
       footer{
         .container_footer{

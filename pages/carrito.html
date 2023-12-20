@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CARRITO</title>
+  <meta name="description" content="Toda nuestra lista de productos, que podés conseguirla en pocos clicks">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="Apple, Fotografía profesional, Accesorios Fotográficos, iPhone, iPad, Nikon, Canon, Sony">
+  <!-- <script src="https://kit.aw"></script> -->
+  <link rel="shortcut icon" href="../assets/favicom.png" type="image/x-icon">
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="https://kit.fontawesome.com/5f6666b2e1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="carrito">
+<!-- Comienza Header -->
+  <header>
+  <div class="container_header">
+    <nav> 
+      <div class="logo_siri" id="principio-producto">
+        <a href="../index.html"><img src="../assets/logo.png" alt="Logo"></a>
+      </div>
+      <input type="checkbox" id="check">
+      <label for="check" class="bar-btn">
+        <i class="fa-solid fa-bars"></i>
+      </label>
+      <ul class="nav-menu">
+        <li><a href="../index.html">Inicio</a></li>
+        <li><a href="./nosotros.html">Nosotros</a></li>
+        <li><a class="active" href="./productos.html">Productos</a></li>
+        <li><a href="./galeria.html">Galería</a></li>
+        <li><a href="./contacto.html">Contacto</a></li>
+        <li>
+          <a href="./pages/carrito.html" class="contenedor_carrito">
+            <img src="./assets/carrito-blanco.png" alt="carrito" class="carrito-blanco">
+            <img src="./assets/carrito-negro.png" alt="carrito" class="carrito-negro">
+          </a>
+        </li>
+        <!-- <div class="contenedor_carrito">
+          <a href="./pages/carrito.html"><img src="../assets/cart-regular-24.png" alt="carrito" class="carrito"></a>
+        </div> -->
+      </ul>
+    </nav>
+  </div>
+  </header>
+<!-- Termina Header -->
+
+
+    <main>
+
+      <div class="contenedor_titulo">
+        <h1>Carrito</h1>
+      </div>
+
+      <div> 
+        <h2 id="carrito-vacio" class="texto_carrito_vacio"> Tu carrito está vacío</h2>
+      </div>
+
+      <div id="carrito-productos" class="contenedor_lista ocultar">
+
+      </div> 
+
+      <div id="carrito-acciones" class="contenedor_compra ocultar">
+
+        <button id="vaciar-carrito" class="vaciar_carrito"> Vaciar Carrito</button>
+        
+        <div>
+          <div class="comprar">
+            <p id="total-a-comprar" class="total_de_compra">Total compra: $2.000</p>
+            <button id="comprar" class="boton_comprar">Comprar </button>
+          </div>
+        </div>
+      </div>
+
+      <div> 
+        <h2 id="carrtio-comprado" class="mensaje_compra ocultar"> Muchas gracias por tu compra</h2>
+      </div>
+
+    </main>
+
+
+
+
+    <footer>
+      <div class="container_footer">
+        <nav class="navbar_footer">
+          <ul class="ul_footer">
+            <li><a href="">Inicio</a></li>
+            <li><a href="../pages/nosotros.html">Nosotros</a></li>
+            <li><a href="../pages/productos.html">Productos</a></li>
+            <li><a href="../pages/galeria.html">Galería</a></li>
+            <li><a href="../pages/contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+        <div class="redes_subscripcion">
+          <div class="redes_footer">
+            <a href="https://www.instagram.com/importacionessiri/" target="_blank"><img src="../assets/redes-sociales/instagram.png" alt="Logo Instagram"></a>
+            <a href="https://www.facebook.com/importacionessiri" target="_blank"><img src="../assets/redes-sociales/facebook.png" alt="Logo Facebook"></a>
+            <a href="https://wa.link/de7a89" target="_blank"><img src="../assets/redes-sociales/whatsapp.png" alt="Logo Whatsapp"></a>
+          </div>
+          <div class="suscripcion">
+            <input type="email" name="" id="" placeholder="Suscribite">
+            <button>Enviar</button>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Termina el Footer -->
+    <!--Scripts Bootstrap-->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+    <script src="../JS/carrito.js"></script>
+    <script src="../JS/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  </div>
+</body>
+</html>

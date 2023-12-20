@@ -3,7 +3,8 @@ body{
   .productos, 
   .galeria, 
   .nosotros, 
-  .contacto {
+  .contacto,
+  .carrito {
     header{
       .container_header{
         width: 100%;
@@ -52,6 +53,39 @@ body{
                 font-weight: 600;
                 font-family: $font-secundaria;
                 text-align: center;
+              }
+            }
+            .contenedor_carrito{
+              margin-right: 10px;
+              .carrito-blanco{
+                display: none;
+                width: 40px;
+                position: absolute;
+                right: -14px;
+              }
+              p{
+                color: black;
+                position: relative;
+                font-size: 20px;
+                background-color: white;
+                padding: 0px 5px;
+                left: 40px;
+                top: 20px;
+                border-radius: 10px;
+              }
+              .carrito-negro{
+                width: 40px;
+              }
+              p{
+                color: white;
+                width: 30px;
+                position: relative;
+                display: inline-block;
+                font-size: 20px;
+                background-color: black;
+                padding: 0px 5px;
+                border-radius: 10px;
+                left:-14px;
               }
             }
           }

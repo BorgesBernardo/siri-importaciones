@@ -1,5 +1,17 @@
 body{
+  header{
+    .contenedor_carrito{
+      margin-left: 15px;
+      .carrito{
+        bottom: 35px;
+      }
+    }
+  }
   .main_contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     .titulo_contacto{
       text-align: center;
       margin-top: 1.875rem;
@@ -79,6 +91,11 @@ body{
           }
         }
       }
+    }
+    .mapa{
+      width: 800px;
+      height: 300px;
+      border-radius: 10px;
     }
   }
 }

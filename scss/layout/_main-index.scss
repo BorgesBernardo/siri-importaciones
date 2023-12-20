@@ -1,5 +1,13 @@
 body{
   .index{
+    header{
+      .contenedor_carrito{
+        margin-left: 15px;
+        .carrito{
+          bottom: 35px;
+        }
+      }
+    }
     main{
       .container_categorias{
         font-family: $font-primaria;
