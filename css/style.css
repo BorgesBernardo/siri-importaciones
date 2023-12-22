@@ -1005,9 +1005,9 @@ body .carrito footer .container_footer .redes_subscripcion .suscripcion button {
   border-radius: 0rem 0rem 0.4375rem 0.4375rem;
 }
 
-@media screen and (min-width: 26.5625rem) {
+@media screen and (min-width: 32.4375rem) {
   body .productos main .container_marcas {
-    margin: 1.875rem 4rem;
+    margin: 1.875rem 6.9rem;
   }
 }
 @media screen and (min-width: 48rem) {
