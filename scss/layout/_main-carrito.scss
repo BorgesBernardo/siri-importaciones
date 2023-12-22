@@ -4,7 +4,7 @@ body{
       h1{
         color: white;
         text-align: center;
-        margin: 30px 0px;
+        margin: 50px 0px 30px 0px;
       }
     }
     .texto_carrito_vacio{
@@ -23,6 +23,7 @@ body{
       .articulo_carrito{
         display: flex;
         flex-direction: column;
+        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
         text-align: center;
@@ -38,27 +39,19 @@ body{
         }
         .contenedor_descripcion{
           display: flex;
-          flex-direction: row;
+          flex-direction: column;
           flex-wrap: wrap;
-          gap: 25px;
+          gap: 5px;
           justify-content: center;
-          align-items: center;
-          text-align: center;
           .nombre,
           .cantidad,
           .precio,
           .subtotal{
-            width: 80px;
             display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
+            flex-direction: row;
+            gap: 5px;
             h3{
               font-size: 20px;
-            }
-            .subtitulo_carrito{
-              text-align: center;
             }
           }
         }
@@ -72,13 +65,13 @@ body{
       gap: 50px;
       color: white;
       margin-bottom: 50px;
-      button{
-        padding: 20px 30px;
+      .vaciar_carrito{
+        padding: 10px 20px;
         color: black;
         background-color: white;
         border: 0;
         border-radius: 16px;
-        font-size: 20px;
+        font-size: 15px;
       }
       .comprar{
         display: flex;
@@ -89,14 +82,20 @@ body{
         border-style: solid;
         border-color: white;
         border-radius: 20px;
+        margin: 0px 10px;
         .total_de_compra{
           font-size: 20px;
-          padding: 0px 15px;
+          padding: 0px 10px;
           margin-bottom: 0px;
           text-align: start;
         }
         .boton_comprar{
-          
+          padding: 20px 20px;
+          color: black;
+          background-color: white;
+          border: 0;
+          border-radius: 16px;
+          font-size: 18px;
         }
       }
     }
@@ -109,4 +108,4 @@ body{
       display: none;
     }
   }
-  }
+}

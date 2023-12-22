@@ -7,7 +7,6 @@
     <meta name="description" content="Nuestros medios de contacto al alcance de tu mano">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="Apple, Fotografía profesional, Accesorios Fotográficos, iPhone, iPad, Nikon, Canon, Sony">
-    <!-- <script src="https://kit.aw"></script> -->
     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
     <link rel="shortcut icon" href="../assets/favicom.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/style.css">
@@ -32,9 +31,13 @@
             <li><a href="./productos.html">Productos</a></li>
             <li><a href="./galeria.html">Galería</a></li>
             <li><a class="active" href="./contacto.html">Contacto</a></li>
-            <div class="contenedor_carrito">
-              <a href="../pages/carrito.html"><img src="../assets/cart-regular-24.png" alt="carrito" class="carrito"></a>
-            </div>
+            <li>
+              <a href="./carrito.html" class="contenedor_carrito">
+                <img src="../assets/carrito-blanco.png" alt="carrito" class="carrito-blanco">
+                <img src="../assets/carrito-negro.png" alt="carrito" class="carrito-negro">
+                <p id="cantidadEnCarrito" class="numero"></p>
+              </a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -50,21 +53,6 @@
           <a href="https://www.instagram.com/importacionessiri" target="_blank"><img src="../assets/redes-sociales/instagram.png" alt="Logo Instagram"></a>
           <a href="https://www.facebook.com/importacionessiri" target="_blank"><img src="../assets/redes-sociales/facebook.png" alt="Logo Facebook"></a>
           <a href="https://wa.link/de7a89" target="_blank"><img src="../assets/redes-sociales/whatsapp.png" alt="Logo Whatsapp"></a>
-        </div>
-        <div class="container_formulario">
-          <form action="" class="formulario_contacto">
-            <div class="nombre_apellido_email">
-              <input type="text" name="nombre y apellido" placeholder="Nombre y Apellido">
-              <input type="email" name="email" placeholder="Email">
-              <input type="text" name="mensaje" placeholder="Asunto">
-            </div>
-            <div class="textarea">
-              <textarea name="" id="" cols="38" rows="7" placeholder="Mensaje" class="textarea"></textarea>
-            </div>
-            <div class="boton_formulario">
-              <button type="button" class="btn btn-outline-black border-white text-white">Enviar</button>
-            </div>
-          </form>
         </div>
         <div class="mail_ubicacion">
           <div class="email">
@@ -99,10 +87,6 @@
             <a href="https://www.instagram.com/importacionessiri/" target="_blank"><img src="../assets/redes-sociales/instagram.png" alt="Logo Instagram"></a>
             <a href="https://www.facebook.com/importacionessiri" target="_blank"><img src="../assets/redes-sociales/facebook.png" alt="Logo Facebook"></a>
             <a href="https://wa.link/de7a89" target="_blank"><img src="../assets/redes-sociales/whatsapp.png" alt="Logo Whatsapp"></a>
-          </div>
-          <div class="suscripcion">
-            <input type="email" name="" id="" placeholder="Suscribite">
-            <button>Enviar</button>
           </div>
         </div>
       </div>

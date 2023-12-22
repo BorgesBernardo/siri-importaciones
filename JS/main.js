@@ -17,7 +17,7 @@ const productos = [
       nombre: "Notebooks",
       id: "apple"
     },
-    precio: 1000
+    precio: 2000
   },
   {
     id: "nikon-mirroles-01",
@@ -27,7 +27,7 @@ const productos = [
       nombre: "Cámaras Nikon",
       id: "nikon",
     },
-    precio: 1000
+    precio: 1800
   },
   {
     id: "nikon-dslr-01",
@@ -40,14 +40,14 @@ const productos = [
     precio: 1050
   },
   {
-    id: "canon-mirroles-01",
+    id: "oferta-04",
     titulo: "Canon Miroless",
-    imagen: "../assets/productos/canon.mirroless.jpg",
+    imagen: "../assets/ofertas/canon-oferta.jpg",
     categoria:{
       nombre: "Cámaras Canon",
-      id: "canon"
+      id: "ofertas"
     },
-    precio: 1000
+    precio: 1300
   },
   {
     id: "canon-dslr-01",
@@ -57,7 +57,7 @@ const productos = [
       nombre: "Cámaras Canon",
       id: "canon"
     },
-    precio: 1000
+    precio: 890
   },
   {
     id: "sony-mirroles-01",
@@ -67,7 +67,7 @@ const productos = [
       nombre: "Cámaras Sony",
       id: "sony"
     },
-    precio: 1000
+    precio: 1670
   },
   {
     id: "sony-cine-01",
@@ -77,39 +77,148 @@ const productos = [
       nombre: "Cámaras Sony",
       id: "sony"
     },
-    precio: 1000
+    precio: 2500
+  },
+  {
+    id: "airpods-01",
+    titulo: "Airpods Pro",
+    imagen: "../assets/productos/airpods.jpg",
+    categoria:{
+      nombre: "Airpods",
+      id: "apple"
+    },
+    precio: 300
+  },
+  {
+    id: "canon-compacta-01",
+    titulo: "Canon Compacta",
+    imagen: "../assets/productos/canon-compacta.jpg",
+    categoria:{
+      nombre: "Cámaras Canon",
+      id: "canon"
+    },
+    precio: 1700
+  },
+  {
+    id: "canon-flash-01",
+    titulo: "Flash Canon",
+    imagen: "../assets/productos/canon-flashes.jpg",
+    categoria:{
+      nombre: "Flash Canon",
+      id: "Canon"
+    },
+    precio: 700
   },
   {
     id: "oferta-01",
     titulo: "Canon Miroless",
-    imagen: "../assets/productos/canon.mirroless.jpg",
+    imagen: "../assets/ofertas/mochila-oferta.jpg",
     categoria:{
       nombre: "Cámaras Canon",
-      id: "canon"
+      id: "ofertas"
     },
     precio: 1000
   },
   {
     id: "oferta-02",
     titulo: "iMac",
-    imagen: "../assets/productos/imac.jpg",
+    imagen: "../assets/ofertas/imac-oferta.jpg",
     categoria:{
       nombre: "Computadoras",
-      id: "apple"
+      id: "ofertas"
     },
     precio: 1000
   },
   {
     id: "oferta-03",
     titulo: "iWatch",
-    imagen: "../assets/productos/iwatch.jpg",
+    imagen: "../assets/ofertas/iwatch-oferta.jpg",
     categoria:{
       nombre: "Relojes",
-      id: "apple"
+      id: "ofertas"
     },
     precio: 1000
   },
-
+  {
+    id: "canon-lentes-01",
+    titulo: "Lentes Canon",
+    imagen: "../assets/productos/canon-lentes.jpg",
+    categoria:{
+      nombre: "Lentes Canon",
+      id: "canon"
+    },
+    precio: 680
+  },
+  {
+    id: "sony-compacta-01",
+    titulo: "Compacta Sony",
+    imagen: "../assets/productos/compacta-sony.jpg",
+    categoria:{
+      nombre: "Cámaras Sony",
+      id: "sony"
+    },
+    precio: 1900
+  },
+  {
+    id: "sony-flash-01",
+    titulo: "Flash Sony",
+    imagen: "../assets/productos/flash-sony.jpg",
+    categoria:{
+      nombre: "Flash Sony",
+      id: "sony"
+    },
+    precio: 2500
+  },
+  {
+    id: "ipad-apple-01",
+    titulo: 'iPad Pro 11" 256gb',
+    imagen: "../assets/productos/ipad.jpg",
+    categoria:{
+      nombre: "Apple iPad",
+      id: "apple"
+    },
+    precio: 590
+  },
+  {
+    id: "lentes-nikon-01",
+    titulo: "Lentes Nikon",
+    imagen: "../assets/productos/lentes-nikon.jpg",
+    categoria:{
+      nombre: "Lentes Nikon",
+      id: "nikon"
+    },
+    precio: 480
+  },
+  {
+    id: "kit-luces-01",
+    titulo: "Kit de Luces",
+    imagen: "../assets/productos/light.jpg",
+    categoria:{
+      nombre: "Kit de Luces",
+      id: ""
+    },
+    precio: 2500
+  },
+  {
+    id: "apple-macmini-01",
+    titulo: "Mac Mini",
+    imagen: "../assets/productos/mac-mini.jpg",
+    categoria:{
+      nombre: "Apple Mac Mini",
+      id: "apple"
+    },
+    precio: 2850
+  },
+  {
+    id: "oferta-05",
+    titulo: "Memoria 128gb",
+    imagen: "../assets/ofertas/memoria-oferta.jpg",
+    categoria:{
+      nombre: "Memoria",
+      id: "ofertas"
+    },
+    precio: 50
+  },
 ];
 
 const contenedorProducto = document.querySelector("#productos");
@@ -129,7 +238,7 @@ function pintarProductos (productosFiltrados){
     const div = document.createElement("div");
     div.classList.add("producto");
     div.innerHTML = `
-      <img src="${producto.imagen}" class="imagen_pr" alt="${producto.titulo}">
+      <img src="${producto.imagen}" class="imagen_producto" alt="${producto.titulo}">
       <div class="producto_body">
         <h3 class="titulo_producto">${producto.titulo}</h3>
         <p class="precio_producto">$${producto.precio}</p>

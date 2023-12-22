@@ -158,14 +158,6 @@ body .carrito header .container_header nav .nav-menu li a {
   font-family: "Poppins", sans-serif;
   text-align: center;
 }
-body .index header .container_header nav .nav-menu .contenedor_carrito,
-body .productos header .container_header nav .nav-menu .contenedor_carrito,
-body .galeria header .container_header nav .nav-menu .contenedor_carrito,
-body .nosotros header .container_header nav .nav-menu .contenedor_carrito,
-body .contacto header .container_header nav .nav-menu .contenedor_carrito,
-body .carrito header .container_header nav .nav-menu .contenedor_carrito {
-  margin-right: 10px;
-}
 body .index header .container_header nav .nav-menu .contenedor_carrito .carrito-blanco,
 body .productos header .container_header nav .nav-menu .contenedor_carrito .carrito-blanco,
 body .galeria header .container_header nav .nav-menu .contenedor_carrito .carrito-blanco,
@@ -207,7 +199,7 @@ body .nosotros header .container_header nav .nav-menu .contenedor_carrito p,
 body .contacto header .container_header nav .nav-menu .contenedor_carrito p,
 body .carrito header .container_header nav .nav-menu .contenedor_carrito p {
   color: white;
-  width: 30px;
+  width: 26px;
   position: relative;
   display: inline-block;
   font-size: 20px;
@@ -597,9 +589,6 @@ body .productos main .subtitulo_producto a img {
   margin-right: 0.625rem;
 }
 
-body .galeria header .contenedor_carrito {
-  margin-left: 15px;
-}
 body .galeria header .contenedor_carrito .carrito {
   bottom: 35px;
 }
@@ -623,9 +612,6 @@ body .galeria main .container_fotos_galeria img {
   width: 17rem;
 }
 
-body .nosotros header .contenedor_carrito {
-  margin-left: 15px;
-}
 body .nosotros header .contenedor_carrito .carrito {
   bottom: 35px;
 }
@@ -650,9 +636,6 @@ body .nosotros .main_nosotros section .texto_nosotros span {
   font-weight: bold;
 }
 
-body header .contenedor_carrito {
-  margin-left: 15px;
-}
 body header .contenedor_carrito .carrito {
   bottom: 35px;
 }
@@ -762,15 +745,16 @@ body .main_contacto .mail_ubicacion .ubicacion a img {
   width: 2.5rem;
 }
 body .main_contacto .mapa {
-  width: 800px;
-  height: 300px;
+  width: 250px;
+  height: 200px;
   border-radius: 10px;
+  margin-bottom: 50px;
 }
 
 body main .contenedor_titulo h1 {
   color: white;
   text-align: center;
-  margin: 30px 0px;
+  margin: 50px 0px 30px 0px;
 }
 body main .texto_carrito_vacio {
   color: white;
@@ -789,6 +773,7 @@ body main .contenedor_lista {
 body main .contenedor_lista .articulo_carrito {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -805,35 +790,24 @@ body main .contenedor_lista .articulo_carrito .foto_producto {
 }
 body main .contenedor_lista .articulo_carrito .contenedor_descripcion {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
-  gap: 25px;
+  gap: 5px;
   justify-content: center;
-  align-items: center;
-  text-align: center;
 }
 body main .contenedor_lista .articulo_carrito .contenedor_descripcion .nombre,
 body main .contenedor_lista .articulo_carrito .contenedor_descripcion .cantidad,
 body main .contenedor_lista .articulo_carrito .contenedor_descripcion .precio,
 body main .contenedor_lista .articulo_carrito .contenedor_descripcion .subtotal {
-  width: 80px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  flex-direction: row;
+  gap: 5px;
 }
 body main .contenedor_lista .articulo_carrito .contenedor_descripcion .nombre h3,
 body main .contenedor_lista .articulo_carrito .contenedor_descripcion .cantidad h3,
 body main .contenedor_lista .articulo_carrito .contenedor_descripcion .precio h3,
 body main .contenedor_lista .articulo_carrito .contenedor_descripcion .subtotal h3 {
   font-size: 20px;
-}
-body main .contenedor_lista .articulo_carrito .contenedor_descripcion .nombre .subtitulo_carrito,
-body main .contenedor_lista .articulo_carrito .contenedor_descripcion .cantidad .subtitulo_carrito,
-body main .contenedor_lista .articulo_carrito .contenedor_descripcion .precio .subtitulo_carrito,
-body main .contenedor_lista .articulo_carrito .contenedor_descripcion .subtotal .subtitulo_carrito {
-  text-align: center;
 }
 body main .contenedor_compra {
   display: flex;
@@ -844,13 +818,13 @@ body main .contenedor_compra {
   color: white;
   margin-bottom: 50px;
 }
-body main .contenedor_compra button {
-  padding: 20px 30px;
+body main .contenedor_compra .vaciar_carrito {
+  padding: 10px 20px;
   color: black;
   background-color: white;
   border: 0;
   border-radius: 16px;
-  font-size: 20px;
+  font-size: 15px;
 }
 body main .contenedor_compra .comprar {
   display: flex;
@@ -861,12 +835,21 @@ body main .contenedor_compra .comprar {
   border-style: solid;
   border-color: white;
   border-radius: 20px;
+  margin: 0px 10px;
 }
 body main .contenedor_compra .comprar .total_de_compra {
   font-size: 20px;
-  padding: 0px 15px;
+  padding: 0px 10px;
   margin-bottom: 0px;
   text-align: start;
+}
+body main .contenedor_compra .comprar .boton_comprar {
+  padding: 20px 20px;
+  color: black;
+  background-color: white;
+  border: 0;
+  border-radius: 16px;
+  font-size: 18px;
 }
 body main .mensaje_compra {
   color: white;
@@ -1097,15 +1080,26 @@ body .carrito footer .container_footer .redes_subscripcion .suscripcion button {
   }
 }
 @media screen and (min-width: 56.25rem) {
-  body .index main .container_categorias {
+  body .index main .container_categorias,
+  body .carrito main .container_categorias {
     flex-direction: row;
   }
   body .index main .container_categorias .categoria_productos,
   body .index main .container_categorias .categoria_mayorista,
-  body .index main .container_categorias .categoria_ofertas {
+  body .index main .container_categorias .categoria_ofertas,
+  body .carrito main .container_categorias .categoria_productos,
+  body .carrito main .container_categorias .categoria_mayorista,
+  body .carrito main .container_categorias .categoria_ofertas {
     justify-content: center;
     margin-right: 0.625rem;
     margin-left: 0.625rem;
+  }
+  body .contacto .main_contacto .mapa {
+    width: 600px;
+  }
+  body .main_carrito .contenedor_lista {
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }
 @media screen and (min-width: 64rem) {
@@ -1158,40 +1152,123 @@ body .carrito footer .container_footer .redes_subscripcion .suscripcion button {
     padding: 0rem 0.625rem;
     color: #fff;
   }
-  body .index main .mail_ubicacion .email,
-  body .contacto main .mail_ubicacion .email,
-  body .nosotros main .mail_ubicacion .email,
-  body .productos main .mail_ubicacion .email,
-  body .galeria main .mail_ubicacion .email,
-  body .carrito main .mail_ubicacion .email {
+  body .index header .container_header nav .nav-menu li .contenedor_carrito .carrito-blanco,
+  body .contacto header .container_header nav .nav-menu li .contenedor_carrito .carrito-blanco,
+  body .nosotros header .container_header nav .nav-menu li .contenedor_carrito .carrito-blanco,
+  body .productos header .container_header nav .nav-menu li .contenedor_carrito .carrito-blanco,
+  body .galeria header .container_header nav .nav-menu li .contenedor_carrito .carrito-blanco,
+  body .carrito header .container_header nav .nav-menu li .contenedor_carrito .carrito-blanco {
+    display: block;
+    position: absolute;
+    top: 33px;
+    right: 44px;
+    z-index: 100;
+  }
+  body .index .main_carrito .contenedor_lista,
+  body .contacto .main_carrito .contenedor_lista,
+  body .nosotros .main_carrito .contenedor_lista,
+  body .productos .main_carrito .contenedor_lista,
+  body .galeria .main_carrito .contenedor_lista,
+  body .carrito .main_carrito .contenedor_lista {
+    flex-direction: column;
+  }
+  body .index .main_carrito .contenedor_lista .articulo_carrito,
+  body .contacto .main_carrito .contenedor_lista .articulo_carrito,
+  body .nosotros .main_carrito .contenedor_lista .articulo_carrito,
+  body .productos .main_carrito .contenedor_lista .articulo_carrito,
+  body .galeria .main_carrito .contenedor_lista .articulo_carrito,
+  body .carrito .main_carrito .contenedor_lista .articulo_carrito {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 850px;
+  }
+  body .index .main_carrito .contenedor_lista .articulo_carrito .contenedor_descripcion,
+  body .contacto .main_carrito .contenedor_lista .articulo_carrito .contenedor_descripcion,
+  body .nosotros .main_carrito .contenedor_lista .articulo_carrito .contenedor_descripcion,
+  body .productos .main_carrito .contenedor_lista .articulo_carrito .contenedor_descripcion,
+  body .galeria .main_carrito .contenedor_lista .articulo_carrito .contenedor_descripcion,
+  body .carrito .main_carrito .contenedor_lista .articulo_carrito .contenedor_descripcion {
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 80px;
+  }
+  body .index .main_carrito .contenedor_lista .articulo_carrito .contenedor_descripcion .nombre,
+  body .index .main_carrito .contenedor_lista .articulo_carrito .contenedor_descripcion .cantidad,
+  body .index .main_carrito .contenedor_lista .articulo_carrito .contenedor_descripcion .precio,
+  body .index .main_carrito .contenedor_lista .articulo_carrito .contenedor_descripcion .subtotal,
+  body .contacto .main_carrito .contenedor_lista .articulo_carrito .contenedor_descripcion .nombre,
+  body .contacto .main_carrito .contenedor_lista .articulo_carrito .contenedor_descripcion .cantidad,
+  body .contacto .main_carrito .contenedor_lista .articulo_carrito .contenedor_descripcion .precio,
+  body .contacto .main_carrito .contenedor_lista .articulo_carrito .contenedor_descripcion .subtotal,
+  body .nosotros .main_carrito .contenedor_lista .articulo_carrito .contenedor_descripcion .nombre,
+  body .nosotros .main_carrito .contenedor_lista .articulo_carrito .contenedor_descripcion .cantidad,
+  body .nosotros .main_carrito .contenedor_lista .articulo_carrito .contenedor_descripcion .precio,
+  body .nosotros .main_carrito .contenedor_lista .articulo_carrito .contenedor_descripcion .subtotal,
+  body .productos .main_carrito .contenedor_lista .articulo_carrito .contenedor_descripcion .nombre,
+  body .productos .main_carrito .contenedor_lista .articulo_carrito .contenedor_descripcion .cantidad,
+  body .productos .main_carrito .contenedor_lista .articulo_carrito .contenedor_descripcion .precio,
+  body .productos .main_carrito .contenedor_lista .articulo_carrito .contenedor_descripcion .subtotal,
+  body .galeria .main_carrito .contenedor_lista .articulo_carrito .contenedor_descripcion .nombre,
+  body .galeria .main_carrito .contenedor_lista .articulo_carrito .contenedor_descripcion .cantidad,
+  body .galeria .main_carrito .contenedor_lista .articulo_carrito .contenedor_descripcion .precio,
+  body .galeria .main_carrito .contenedor_lista .articulo_carrito .contenedor_descripcion .subtotal,
+  body .carrito .main_carrito .contenedor_lista .articulo_carrito .contenedor_descripcion .nombre,
+  body .carrito .main_carrito .contenedor_lista .articulo_carrito .contenedor_descripcion .cantidad,
+  body .carrito .main_carrito .contenedor_lista .articulo_carrito .contenedor_descripcion .precio,
+  body .carrito .main_carrito .contenedor_lista .articulo_carrito .contenedor_descripcion .subtotal {
+    flex-direction: column;
+  }
+  body .index .main_carrito .contenedor_compra,
+  body .contacto .main_carrito .contenedor_compra,
+  body .nosotros .main_carrito .contenedor_compra,
+  body .productos .main_carrito .contenedor_compra,
+  body .galeria .main_carrito .contenedor_compra,
+  body .carrito .main_carrito .contenedor_compra {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  body .index .main_contacto .mail_ubicacion .email,
+  body .contacto .main_contacto .mail_ubicacion .email,
+  body .nosotros .main_contacto .mail_ubicacion .email,
+  body .productos .main_contacto .mail_ubicacion .email,
+  body .galeria .main_contacto .mail_ubicacion .email,
+  body .carrito .main_contacto .mail_ubicacion .email {
     flex-direction: row;
     align-items: center;
     margin-bottom: 1.25rem;
   }
-  body .index main .mail_ubicacion .email p,
-  body .contacto main .mail_ubicacion .email p,
-  body .nosotros main .mail_ubicacion .email p,
-  body .productos main .mail_ubicacion .email p,
-  body .galeria main .mail_ubicacion .email p,
-  body .carrito main .mail_ubicacion .email p {
+  body .index .main_contacto .mail_ubicacion .email p,
+  body .contacto .main_contacto .mail_ubicacion .email p,
+  body .nosotros .main_contacto .mail_ubicacion .email p,
+  body .productos .main_contacto .mail_ubicacion .email p,
+  body .galeria .main_contacto .mail_ubicacion .email p,
+  body .carrito .main_contacto .mail_ubicacion .email p {
     margin-bottom: 0rem;
   }
-  body .index main .mail_ubicacion .ubicacion,
-  body .contacto main .mail_ubicacion .ubicacion,
-  body .nosotros main .mail_ubicacion .ubicacion,
-  body .productos main .mail_ubicacion .ubicacion,
-  body .galeria main .mail_ubicacion .ubicacion,
-  body .carrito main .mail_ubicacion .ubicacion {
+  body .index .main_contacto .mail_ubicacion .ubicacion,
+  body .contacto .main_contacto .mail_ubicacion .ubicacion,
+  body .nosotros .main_contacto .mail_ubicacion .ubicacion,
+  body .productos .main_contacto .mail_ubicacion .ubicacion,
+  body .galeria .main_contacto .mail_ubicacion .ubicacion,
+  body .carrito .main_contacto .mail_ubicacion .ubicacion {
     flex-direction: row;
     align-items: center;
   }
-  body .index main .mail_ubicacion .ubicacion p,
-  body .contacto main .mail_ubicacion .ubicacion p,
-  body .nosotros main .mail_ubicacion .ubicacion p,
-  body .productos main .mail_ubicacion .ubicacion p,
-  body .galeria main .mail_ubicacion .ubicacion p,
-  body .carrito main .mail_ubicacion .ubicacion p {
+  body .index .main_contacto .mail_ubicacion .ubicacion p,
+  body .contacto .main_contacto .mail_ubicacion .ubicacion p,
+  body .nosotros .main_contacto .mail_ubicacion .ubicacion p,
+  body .productos .main_contacto .mail_ubicacion .ubicacion p,
+  body .galeria .main_contacto .mail_ubicacion .ubicacion p,
+  body .carrito .main_contacto .mail_ubicacion .ubicacion p {
     margin-bottom: 0rem;
+  }
+  body .index .main_contacto .mapa,
+  body .contacto .main_contacto .mapa,
+  body .nosotros .main_contacto .mapa,
+  body .productos .main_contacto .mapa,
+  body .galeria .main_contacto .mapa,
+  body .carrito .main_contacto .mapa {
+    width: 800px;
   }
 }
 

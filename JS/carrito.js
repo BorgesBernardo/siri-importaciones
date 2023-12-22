@@ -24,20 +24,20 @@ if(productosEnCarritoLS){
       <img src="${producto.imagen}" alt="${producto.titulo}" class="foto_producto">
       <div class="contenedor_descripcion"> 
       <div class="nombre">
-        <h3>Nombre</h3>
+        <h3>Nombre:</h3>
         <p class="subtitulo_carrito">${producto.titulo}</p>
       </div>
       <div class="cantidad">
-        <h3>Cantidad</h3>
+        <h3>Cantidad:</h3>
         <p class="subtitulo_carrito">${producto.cantidad}</p>
       </div>
       <div class="precio">
-        <h3>Precio</h3>
+        <h3>Precio:</h3>
         <p class="subtitulo_carrito">$${producto.precio}</p>
       </div>
       <div class="subtotal">
-        <h3>Sub Total</h3>
-        <p class="subtitulo_carrito">${producto.cantidad * producto.precio}</p>
+        <h3>Sub Total:</h3>
+        <p class="subtitulo_carrito">$${producto.cantidad * producto.precio}</p>
       </div>
       </div>
       `;

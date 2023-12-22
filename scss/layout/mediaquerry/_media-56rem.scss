@@ -1,6 +1,7 @@
 @media screen and (min-width: 56.25rem){
   body{
-    .index{
+    .index,
+    .carrito{
       main{
         .container_categorias{
           flex-direction: row;
@@ -12,6 +13,19 @@
             margin-left: .625rem;
           }
         }
+      }
+    }
+    .contacto{
+      .main_contacto{
+        .mapa{
+          width: 600px;
+        }
+      }
+    }
+    .main_carrito{
+      .contenedor_lista{
+        flex-direction: row;
+        flex-wrap: wrap;
       }
     }
   }

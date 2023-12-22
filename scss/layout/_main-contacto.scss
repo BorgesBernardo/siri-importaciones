@@ -1,7 +1,6 @@
 body{
   header{
     .contenedor_carrito{
-      margin-left: 15px;
       .carrito{
         bottom: 35px;
       }
@@ -93,9 +92,10 @@ body{
       }
     }
     .mapa{
-      width: 800px;
-      height: 300px;
+      width: 250px;
+      height: 200px;
       border-radius: 10px;
+      margin-bottom: 50px;
     }
   }
 }

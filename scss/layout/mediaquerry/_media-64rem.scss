@@ -36,12 +36,46 @@
                   padding: 0rem .625rem;
                   color: $color-texto;
                 }
+                .contenedor_carrito{
+                  .carrito-blanco{
+                    display: block;
+                    position: absolute;
+                    top: 33px;
+                    right: 44px;
+                    z-index: 100;
+                  }
+                }
               }
             }
           }
         }
       }
-      main{
+      .main_carrito{
+        .contenedor_lista{
+          flex-direction: column;
+          .articulo_carrito{
+            flex-direction: row;
+            flex-wrap: nowrap;
+            width: 850px;
+            .contenedor_descripcion{
+              flex-direction: row;
+              flex-wrap: nowrap;
+              gap: 80px;
+              .nombre,
+              .cantidad,
+              .precio,
+              .subtotal{
+                flex-direction: column;
+              }
+            }
+          }
+        }
+        .contenedor_compra{
+          flex-direction: row;
+          justify-content: space-around;
+        }
+      }
+      .main_contacto{
         .mail_ubicacion{
           .email{
             flex-direction: row;
@@ -58,6 +92,9 @@
               margin-bottom: 0rem;
             }
           }
+        }
+        .mapa{
+          width: 800px;
         }
       }
     }
